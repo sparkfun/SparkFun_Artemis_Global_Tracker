@@ -14576,6 +14576,7 @@ Supply: 1.65V to 5.5V
 <part name="FRAME5" library="SparkFun-Aesthetics" deviceset="FRAME-LEDGER" device=""/>
 <part name="SUPPLY3" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="GND3" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
+<part name="SUPPLY19" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -14641,7 +14642,6 @@ tuned for Iridium, GPS and GLONASS</text>
 <text x="203.2" y="149.86" size="1.27" layer="97" font="vector" align="center">For a 1.55mm PCB, 50 Ohm
 antenna traces should be
 32 mil with 4 mil gap </text>
-<text x="266.7" y="150.622" size="1.778" layer="91" font="vector" rot="R180">+5.3V</text>
 <wire x1="304.8" y1="193.04" x2="304.8" y2="119.38" width="0.2032" layer="97" style="longdash"/>
 <wire x1="304.8" y1="119.38" x2="162.56" y2="119.38" width="0.2032" layer="97" style="longdash"/>
 <text x="345.44" y="182.88" size="2.54" layer="94" font="vector" align="bottom-center">Pressure, Humidity &amp;
@@ -14979,8 +14979,8 @@ Relative Humidity: 0x40</text>
 <attribute name="NAME" x="236.22" y="134.62" size="1.778" layer="95" font="vector" rot="MR0"/>
 <attribute name="VALUE" x="236.22" y="132.08" size="1.778" layer="96" font="vector" rot="MR0"/>
 </instance>
-<instance part="GND40" gate="1" x="274.32" y="124.46" smashed="yes">
-<attribute name="VALUE" x="274.32" y="124.206" size="1.778" layer="96" font="vector" align="top-center"/>
+<instance part="GND40" gate="1" x="297.18" y="127" smashed="yes">
+<attribute name="VALUE" x="297.18" y="126.746" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
 <instance part="GND44" gate="1" x="297.18" y="162.56" smashed="yes">
 <attribute name="VALUE" x="297.18" y="162.306" size="1.778" layer="96" font="vector" align="top-center"/>
@@ -14996,13 +14996,13 @@ Relative Humidity: 0x40</text>
 <attribute name="NAME" x="293.878" y="170.18" size="1.778" layer="95" font="vector" rot="R90"/>
 <attribute name="VALUE" x="302.26" y="170.18" size="1.778" layer="95" font="vector" rot="R90"/>
 </instance>
-<instance part="U11" gate="G1" x="271.78" y="157.48" smashed="yes">
-<attribute name="NAME" x="271.78" y="151.638" size="1.778" layer="95" font="vector"/>
-<attribute name="VALUE" x="264.922" y="163.068" size="1.778" layer="95" font="vector"/>
+<instance part="U11" gate="G1" x="271.78" y="144.78" smashed="yes">
+<attribute name="NAME" x="271.78" y="138.938" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="264.922" y="150.368" size="1.778" layer="95" font="vector"/>
 </instance>
-<instance part="U11" gate="G2" x="274.32" y="137.16" smashed="yes">
-<attribute name="NAME" x="271.018" y="132.08" size="1.778" layer="95" font="vector" rot="R90"/>
-<attribute name="VALUE" x="279.4" y="132.08" size="1.778" layer="95" font="vector" rot="R90"/>
+<instance part="U11" gate="G2" x="297.18" y="139.7" smashed="yes">
+<attribute name="NAME" x="293.878" y="134.62" size="1.778" layer="95" font="vector" rot="R90"/>
+<attribute name="VALUE" x="302.26" y="134.62" size="1.778" layer="95" font="vector" rot="R90"/>
 </instance>
 <instance part="R31" gate="G$1" x="259.08" y="170.18" smashed="yes" rot="R270">
 <attribute name="NAME" x="260.604" y="170.18" size="1.778" layer="95" font="vector" rot="R270" align="bottom-center"/>
@@ -15030,6 +15030,9 @@ Relative Humidity: 0x40</text>
 </instance>
 <instance part="GND3" gate="1" x="322.58" y="152.4" smashed="yes">
 <attribute name="VALUE" x="320.04" y="149.86" size="1.778" layer="96" font="vector"/>
+</instance>
+<instance part="SUPPLY19" gate="G$1" x="297.18" y="149.86" smashed="yes">
+<attribute name="VALUE" x="297.18" y="152.654" size="1.778" layer="96" font="vector" align="bottom-center"/>
 </instance>
 </instances>
 <busses>
@@ -15097,6 +15100,11 @@ Relative Humidity: 0x40</text>
 <wire x1="335.28" y1="165.1" x2="332.74" y2="165.1" width="0.1524" layer="91"/>
 <pinref part="SUPPLY13" gate="G$1" pin="3.3V"/>
 <wire x1="332.74" y1="167.64" x2="332.74" y2="165.1" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="SUPPLY19" gate="G$1" pin="3.3V"/>
+<wire x1="297.18" y1="149.86" x2="297.18" y2="147.32" width="0.1524" layer="91"/>
+<pinref part="U11" gate="G2" pin="P$V+"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -15263,7 +15271,7 @@ Relative Humidity: 0x40</text>
 <wire x1="190.5" y1="167.64" x2="190.5" y2="162.56" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="274.32" y1="129.54" x2="274.32" y2="127" width="0.1524" layer="91"/>
+<wire x1="297.18" y1="132.08" x2="297.18" y2="129.54" width="0.1524" layer="91"/>
 <pinref part="GND40" gate="1" pin="GND"/>
 <pinref part="U11" gate="G2" pin="P$V-"/>
 </segment>
@@ -15329,9 +15337,9 @@ Relative Humidity: 0x40</text>
 <label x="220.98" y="165.1" size="1.27" layer="95" font="vector" xref="yes"/>
 <wire x1="215.9" y1="165.1" x2="218.44" y2="165.1" width="0.1524" layer="91"/>
 <wire x1="218.44" y1="165.1" x2="220.98" y2="165.1" width="0.1524" layer="91"/>
-<wire x1="218.44" y1="165.1" x2="218.44" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="218.44" y1="165.1" x2="218.44" y2="144.78" width="0.1524" layer="91"/>
 <junction x="218.44" y="165.1"/>
-<wire x1="218.44" y1="157.48" x2="266.7" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="218.44" y1="144.78" x2="266.7" y2="144.78" width="0.1524" layer="91"/>
 <pinref part="U11" gate="G1" pin="A"/>
 </segment>
 </net>
@@ -15396,12 +15404,6 @@ Relative Humidity: 0x40</text>
 <junction x="81.28" y="264.16"/>
 <wire x1="81.28" y1="266.7" x2="83.82" y2="266.7" width="0.1524" layer="91"/>
 <label x="83.82" y="266.7" size="1.27" layer="95" font="vector" xref="yes"/>
-</segment>
-<segment>
-<wire x1="274.32" y1="147.32" x2="271.78" y2="147.32" width="0.1524" layer="91"/>
-<label x="271.78" y="147.32" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
-<wire x1="274.32" y1="144.78" x2="274.32" y2="147.32" width="0.1524" layer="91"/>
-<pinref part="U11" gate="G2" pin="P$V+"/>
 </segment>
 </net>
 <net name="ARTEMIS_D28" class="0">
@@ -15870,11 +15872,11 @@ Relative Humidity: 0x40</text>
 </net>
 <net name="N$33" class="0">
 <segment>
-<wire x1="284.48" y1="157.48" x2="284.48" y2="175.26" width="0.1524" layer="91"/>
+<wire x1="284.48" y1="144.78" x2="284.48" y2="175.26" width="0.1524" layer="91"/>
 <wire x1="284.48" y1="175.26" x2="281.94" y2="175.26" width="0.1524" layer="91"/>
 <pinref part="U12" gate="G1" pin="B"/>
 <pinref part="U11" gate="G1" pin="Y"/>
-<wire x1="284.48" y1="157.48" x2="281.94" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="284.48" y1="144.78" x2="281.94" y2="144.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

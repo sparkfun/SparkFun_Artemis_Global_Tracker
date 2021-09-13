@@ -15592,7 +15592,9 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <wire x1="13.97" y1="32.342" x2="13.97" y2="29.591" width="0.6096" layer="1"/>
 <wire x1="13.97" y1="29.591" x2="12.192" y2="27.813" width="0.6096" layer="1"/>
 <contactref element="U12" pad="5"/>
-<wire x1="42.0218" y1="43.0182" x2="56.2" y2="49.5601" width="0" layer="19" extent="1-1"/>
+<contactref element="U11" pad="5"/>
+<wire x1="56.5" y1="42.86" x2="56.2" y2="49.5601" width="0" layer="19" extent="1-1"/>
+<wire x1="49.53" y1="30.48" x2="56.5" y2="42.86" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GND">
 <polygon width="0.254" layer="16" isolate="0.3048" rank="2">
@@ -16460,8 +16462,6 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <wire x1="10.8458" y1="57.2008" x2="10.922" y2="57.277" width="0.2032" layer="1"/>
 <wire x1="10.922" y1="57.277" x2="10.922" y2="58.8146" width="0.4064" layer="1"/>
 <wire x1="10.922" y1="58.8146" x2="10.8458" y2="58.8908" width="0.3048" layer="1"/>
-<contactref element="U11" pad="5"/>
-<wire x1="34.193" y1="47.432" x2="56.5" y2="42.86" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$11">
 <contactref element="U2" pad="7"/>
