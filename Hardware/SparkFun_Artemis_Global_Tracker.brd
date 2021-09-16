@@ -15261,7 +15261,7 @@ These are the minimums &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabili
 <element name="DEBUG" library="SparkFun-Connectors" package="2X5-PTH-1.27MM-NO_SILK" value="CORTEX_DEBUG" x="48.26" y="24.765" smashed="yes" rot="MR270">
 <attribute name="NAME" x="46.3296" y="26.3398" size="0.6096" layer="26" font="vector" ratio="20" rot="MR270"/>
 </element>
-<element name="QWIIC" library="SparkFun-Connectors" package="JST04_1MM_RA" value="QWIIC_RIGHT_ANGLE" x="41.275" y="5.207" smashed="yes">
+<element name="QWIIC" library="SparkFun-Connectors" package="JST04_1MM_RA" value="QWIIC_RA" x="41.275" y="5.207" smashed="yes">
 <attribute name="NAME" x="39.878" y="3.048" size="0.6096" layer="25" font="vector" ratio="20"/>
 <attribute name="PROD_ID" value="CONN-13694" x="41.275" y="5.207" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" value="QWIIC_RIGHT_ANGLE" x="39.624" y="1.905" size="0.6096" layer="27" font="vector" ratio="20"/>
