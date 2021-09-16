@@ -34935,6 +34935,9 @@ Supply: 1.65V to 5.5V
 <part name="Q5" library="SparkFun-DiscreteSemi" deviceset="MOSFET_PCH" device="-DMG2305UX-7" value="20V/4.2A/52mΩ/1.4W"/>
 <part name="R18" library="SparkFun-Resistors" deviceset="10KOHM" device="-0402-1/10W-0.1%" value="10K"/>
 <part name="GND10" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
+<part name="3V3SW" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X5" value=""/>
+<part name="D17" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X5" value=""/>
+<part name="D41" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X5" value=""/>
 </parts>
 <sheets>
 <sheet>
@@ -35670,6 +35673,15 @@ solar power or
 <instance part="GND10" gate="1" x="220.98" y="83.82" smashed="yes">
 <attribute name="VALUE" x="220.98" y="83.566" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
+<instance part="3V3SW" gate="G$1" x="149.86" y="144.78" smashed="yes">
+<attribute name="NAME" x="153.67" y="144.272" size="1.27" layer="95" font="vector"/>
+</instance>
+<instance part="D17" gate="G$1" x="236.22" y="215.9" smashed="yes">
+<attribute name="NAME" x="240.03" y="215.392" size="1.27" layer="95" font="vector"/>
+</instance>
+<instance part="D41" gate="G$1" x="236.22" y="213.36" smashed="yes">
+<attribute name="NAME" x="240.03" y="212.852" size="1.27" layer="95" font="vector"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -36097,6 +36109,11 @@ solar power or
 <wire x1="215.9" y1="254" x2="208.28" y2="254" width="0.1524" layer="91"/>
 <label x="208.28" y="254" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<label x="233.68" y="215.9" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+<pinref part="D17" gate="G$1" pin="1"/>
+<wire x1="233.68" y1="215.9" x2="236.22" y2="215.9" width="0.1524" layer="91" style="longdash"/>
+</segment>
 </net>
 <net name="EXT_PWR" class="0">
 <segment>
@@ -36370,6 +36387,10 @@ solar power or
 <wire x1="147.32" y1="152.4" x2="147.32" y2="149.86" width="0.1524" layer="91"/>
 <wire x1="147.32" y1="149.86" x2="149.86" y2="149.86" width="0.1524" layer="91"/>
 <label x="149.86" y="149.86" size="1.27" layer="95" font="vector" xref="yes"/>
+<wire x1="147.32" y1="149.86" x2="147.32" y2="144.78" width="0.1524" layer="91" style="longdash"/>
+<junction x="147.32" y="149.86"/>
+<pinref part="3V3SW" gate="G$1" pin="1"/>
+<wire x1="147.32" y1="144.78" x2="149.86" y2="144.78" width="0.1524" layer="91" style="longdash"/>
 </segment>
 <segment>
 <wire x1="266.7" y1="190.5" x2="269.24" y2="190.5" width="0.1524" layer="91"/>
@@ -36413,6 +36434,11 @@ solar power or
 <pinref part="J1" gate="G$1" pin="RING_INDICATOR"/>
 <wire x1="256.54" y1="246.38" x2="261.62" y2="246.38" width="0.1524" layer="91"/>
 <label x="261.62" y="246.38" size="1.27" layer="95" font="vector" xref="yes"/>
+</segment>
+<segment>
+<wire x1="236.22" y1="213.36" x2="233.68" y2="213.36" width="0.1524" layer="91"/>
+<label x="233.68" y="213.36" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+<pinref part="D41" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$3" class="0">
