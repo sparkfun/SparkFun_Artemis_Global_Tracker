@@ -34814,7 +34814,7 @@ Supply: 1.65V to 5.5V
 <part name="GND35" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="C20" library="SparkFun-Capacitors" deviceset="0.1UF" device="-0603-25V-5%" value="0.1uF"/>
 <part name="C22" library="SparkFun-Capacitors" deviceset="10UF" device="-0603-6.3V-20%" value="10uF"/>
-<part name="C23" library="SparkFun-Capacitors" deviceset="1.0UF" device="-0603-16V-10%" value="1.0uF"/>
+<part name="C23" library="SparkFun-Capacitors" deviceset="1.0UF" device="-0603-16V-10%-X7R" value="1.0uF"/>
 <part name="SUPPLY9" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="SUPPLY21" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="SUPPLY22" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
@@ -34822,7 +34822,7 @@ Supply: 1.65V to 5.5V
 <part name="U7" library="SparkFun-IC-Microcontroller" deviceset="ARTEMIS_MODULE" device="SMD"/>
 <part name="C21" library="SparkFun-Capacitors" deviceset="22UF" device="-0805-16V-20%" value="22uF"/>
 <part name="C25" library="SparkFun-Capacitors" deviceset="22UF" device="-0603-6.3V-20%" value="22uF"/>
-<part name="C27" library="SparkFun-Capacitors" deviceset="1.0UF" device="-0603-16V-10%" value="1.0uF"/>
+<part name="C27" library="SparkFun-Capacitors" deviceset="1.0UF" device="-0603-16V-10%-X7R" value="1.0uF"/>
 <part name="C28" library="SparkFun-Capacitors" deviceset="0.1UF" device="-0603-25V-5%" value="0.1uF"/>
 <part name="SUPPLY32" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="R21" library="SparkFun-Resistors" deviceset="1KOHM" device="-0402T-1/16W-1%" value="1k"/>
@@ -34932,7 +34932,7 @@ Supply: 1.65V to 5.5V
 <part name="JP12" library="SparkFun-Hardware" deviceset="STAND-OFF" device=""/>
 <part name="JP10" library="SparkFun-Hardware" deviceset="STAND-OFF" device=""/>
 <part name="JP9" library="SparkFun-Hardware" deviceset="STAND-OFF" device=""/>
-<part name="C24" library="SparkFun-Capacitors" deviceset="1.0UF" device="-0603-16V-10%" value="1.0uF"/>
+<part name="C24" library="SparkFun-Capacitors" deviceset="1.0UF" device="-0603-16V-10%-X7R" value="1.0uF"/>
 <part name="SUPPLY17" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="GND37" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="J6" library="SparkFun-Connectors" deviceset="U.FL2PIN" device="" value="U.FL"/>

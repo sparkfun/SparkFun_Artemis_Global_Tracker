@@ -19529,7 +19529,7 @@ These are the minimums &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabili
 </element>
 <element name="C23" library="SparkFun-Capacitors" package="0603" value="1.0uF" x="18.415" y="34.29" smashed="yes" rot="R180">
 <attribute name="NAME" x="16.002" y="34.544" size="0.6096" layer="25" font="vector" ratio="20" rot="R180" align="bottom-center"/>
-<attribute name="PROD_ID" value="CAP-00868" x="37.465" y="24.13" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="PROD_ID" value="CAP-13930" x="37.465" y="24.13" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="U7" library="SparkFun-IC-Microcontroller" package="ARTEMIS_FP" value="ARTEMIS_MODULESMD" x="25.4" y="21.59" smashed="yes" rot="R270">
 <attribute name="PROD_ID" value="SUB-14402" x="6.35" y="26.67" size="1.778" layer="27" rot="R270" display="off"/>
@@ -19544,7 +19544,7 @@ These are the minimums &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabili
 </element>
 <element name="C27" library="SparkFun-Capacitors" package="0603" value="1.0uF" x="5.715" y="36.195" smashed="yes" rot="R180">
 <attribute name="NAME" x="3.175" y="36.449" size="0.6096" layer="25" font="vector" ratio="20" rot="R180" align="bottom-center"/>
-<attribute name="PROD_ID" value="CAP-00868" x="17.145" y="67.945" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="PROD_ID" value="CAP-13930" x="17.145" y="67.945" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="C28" library="SparkFun-Capacitors" package="0603" value="0.1uF" x="11.049" y="33.782" smashed="yes" rot="R270">
 <attribute name="NAME" x="11.811" y="33.782" size="0.6096" layer="25" font="vector" ratio="20" rot="R270" align="bottom-center"/>
@@ -19752,7 +19752,7 @@ These are the minimums &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabili
 <element name="JP9" library="SparkFun-Hardware" package="STAND-OFF" value="STAND-OFF" x="2.54" y="60.96" smashed="yes"/>
 <element name="C24" library="SparkFun-Capacitors" package="0603" value="1.0uF" x="45.085" y="6.4008" smashed="yes">
 <attribute name="NAME" x="45.085" y="7.1628" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center"/>
-<attribute name="PROD_ID" value="CAP-00868" x="46.355" y="6.4008" size="1.778" layer="27" display="off"/>
+<attribute name="PROD_ID" value="CAP-13930" x="46.355" y="6.4008" size="1.778" layer="27" display="off"/>
 </element>
 <element name="J6" library="SparkFun-Connectors" package="U.FL" value="U.FL" x="37.592" y="50.165" smashed="yes" rot="R90">
 <attribute name="NAME" x="36.703" y="52.959" size="0.8128" layer="25" font="vector" ratio="18" rot="R180"/>
