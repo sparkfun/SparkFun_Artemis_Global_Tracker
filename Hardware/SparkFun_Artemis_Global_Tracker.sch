@@ -34821,7 +34821,7 @@ Supply: 1.65V to 5.5V
 <part name="SUPPLY23" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="U7" library="SparkFun-IC-Microcontroller" deviceset="ARTEMIS_MODULE" device="SMD"/>
 <part name="C21" library="SparkFun-Capacitors" deviceset="22UF" device="-0805-16V-20%" value="22uF"/>
-<part name="C25" library="SparkFun-Capacitors" deviceset="22UF" device="-0603-6.3V-20%" value="22uF"/>
+<part name="C25" library="SparkFun-Capacitors" deviceset="22UF" device="-0805-16V-20%" value="22uF"/>
 <part name="C27" library="SparkFun-Capacitors" deviceset="1.0UF" device="-0603-16V-10%-X7R" value="1.0uF"/>
 <part name="C28" library="SparkFun-Capacitors" deviceset="0.1UF" device="-0603-25V-5%" value="0.1uF"/>
 <part name="SUPPLY32" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
