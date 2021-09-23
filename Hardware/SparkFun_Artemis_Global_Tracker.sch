@@ -28316,6 +28316,7 @@ Supply: 1.65V to 5.5V
 <part name="J10" library="SparkFun-Connectors" deviceset="CONN_04" device="1X04_NO_SILK_NO_POP"/>
 <part name="J11" library="SparkFun-Connectors" deviceset="CONN_04" device="1X04_NO_SILK_NO_POP"/>
 <part name="LOGO2" library="SparkFun-Aesthetics" deviceset="SFE_LOGO_FLAME" device=".3_INCH" value="SFE_LOGO_FLAME.3_INCH"/>
+<part name="J13" library="SparkFun-Connectors" deviceset="CONN_01" device="PTH_NO_SILK_YES_STOP"/>
 </parts>
 <sheets>
 <sheet>
@@ -30596,6 +30597,10 @@ solar power or
 <attribute name="VALUE" x="50.8" y="10.414" size="1.778" layer="96" font="vector"/>
 <attribute name="NAME" x="50.8" y="25.908" size="1.778" layer="95" font="vector"/>
 </instance>
+<instance part="J13" gate="G$1" x="53.34" y="5.08" smashed="yes">
+<attribute name="VALUE" x="50.8" y="0.254" size="1.778" layer="96" font="vector"/>
+<attribute name="NAME" x="50.8" y="8.128" size="1.778" layer="95" font="vector"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -31197,6 +31202,18 @@ solar power or
 <pinref part="J10" gate="J1" pin="4"/>
 <wire x1="60.96" y1="43.18" x2="63.5" y2="43.18" width="0.1524" layer="91"/>
 <label x="63.5" y="43.18" size="1.27" layer="95" font="vector" xref="yes"/>
+</segment>
+</net>
+<net name="ARTEMIS_D37" class="0">
+<segment>
+<pinref part="U7" gate="U1" pin="(TX1/PDMCLK/SCCIO)~D37"/>
+<wire x1="119.38" y1="99.06" x2="121.92" y2="99.06" width="0.1524" layer="91"/>
+<label x="121.92" y="99.06" size="1.27" layer="95" font="vector" xref="yes"/>
+</segment>
+<segment>
+<pinref part="J13" gate="G$1" pin="1"/>
+<wire x1="60.96" y1="5.08" x2="63.5" y2="5.08" width="0.1524" layer="91"/>
+<label x="63.5" y="5.08" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 </net>
 </nets>
