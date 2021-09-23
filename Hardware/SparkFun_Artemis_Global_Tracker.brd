@@ -42,7 +42,7 @@
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="yes"/>
@@ -216,8 +216,8 @@
 <text x="27.01925" y="52.10175" size="1.778" layer="22" ratio="18" rot="MR90" align="bottom-center">-</text>
 <text x="32.03575" y="52.10175" size="1.778" layer="22" ratio="18" rot="MR90" align="bottom-center">-</text>
 <circle x="8.636" y="57.277" radius="0.1524" width="0.3048" layer="21"/>
-<dimension x1="0" y1="63.5" x2="0" y2="0" x3="-7.62" y3="31.75" textsize="1.778" layer="51" unit="inch" precision="1"/>
-<dimension x1="0" y1="63.5" x2="50.8" y2="63.5" x3="25.4" y3="74.93" textsize="1.778" layer="51" unit="inch" precision="1"/>
+<dimension x1="0" y1="63.5" x2="0" y2="0" x3="-7.62" y3="31.75" textsize="1.778" layer="47" unit="inch" precision="1"/>
+<dimension x1="0" y1="63.5" x2="50.8" y2="63.5" x3="25.4" y3="74.93" textsize="1.778" layer="47" unit="inch" precision="1"/>
 <text x="31.877" y="60.706" size="1.778" layer="21" ratio="18" align="center">+</text>
 <text x="22.733" y="60.833" size="1.778" layer="21" ratio="18" align="center">+</text>
 <polygon width="0.3048" layer="22" spacing="127" pour="hatch">
@@ -238,15 +238,15 @@
 <vertex x="30.607" y="16.5735"/>
 <vertex x="30.607" y="13.3985"/>
 </polygon>
-<dimension x1="0" y1="63.5" x2="39.37" y2="63.5" x3="19.685" y3="71.12" textsize="1.778" layer="51" dtype="horizontal" unit="inch"/>
-<dimension x1="0" y1="63.5" x2="2.54" y2="63.5" x3="1.27" y3="67.31" textsize="1.778" layer="51" dtype="horizontal" unit="inch" precision="1"/>
-<dimension x1="0" y1="0" x2="0" y2="2.54" x3="-3.81" y3="1.27" textsize="1.778" layer="51" unit="inch" precision="1"/>
+<dimension x1="0" y1="63.5" x2="39.37" y2="63.5" x3="19.685" y3="71.12" textsize="1.778" layer="47" dtype="horizontal" unit="inch"/>
+<dimension x1="0" y1="63.5" x2="2.54" y2="63.5" x3="1.27" y3="67.31" textsize="1.778" layer="47" dtype="horizontal" unit="inch" precision="1"/>
+<dimension x1="0" y1="0" x2="0" y2="2.54" x3="-3.81" y3="1.27" textsize="1.778" layer="47" unit="inch" precision="1"/>
 <text x="20.066" y="9.017" size="1.778" layer="21" ratio="18" align="center">+</text>
 <text x="30.099" y="9.017" size="1.778" layer="21" ratio="18" align="center">+</text>
 <text x="24.765" y="9.017" size="1.778" layer="21" ratio="18" align="center">-</text>
 <text x="34.925" y="9.017" size="1.778" layer="21" ratio="18" align="center">-</text>
-<text x="22.86" y="-13.97" size="1.778" layer="51" font="vector">Paul Clark</text>
-<text x="3.81" y="-16.51" size="1.778" layer="51" font="vector">Revised by: Pete Lewis</text>
+<text x="22.86" y="-40.64" size="1.778" layer="51" font="vector">Paul Clark</text>
+<text x="3.81" y="-43.18" size="1.778" layer="51" font="vector">Revised by: Pete Lewis</text>
 <rectangle x1="4.7244" y1="13.4366" x2="5.4102" y2="14.859" layer="22"/>
 <polygon width="0.254" layer="22">
 <vertex x="8.4582" y="13.5636" curve="90"/>
@@ -256,6 +256,32 @@
 <vertex x="8.4582" y="15.9004"/>
 </polygon>
 <rectangle x1="22.098" y1="48.2854" x2="22.1234" y2="48.4124" layer="41"/>
+<dimension x1="0" y1="63.5" x2="2.54" y2="60.96" x3="-12.7" y3="62.23" textsize="1.778" textratio="15" layer="47" dtype="vertical" unit="inch"/>
+<dimension x1="50.8" y1="63.5" x2="48.26" y2="60.96" x3="59.69" y3="62.23" textsize="1.778" textratio="15" layer="47" dtype="vertical" unit="inch"/>
+<dimension x1="50.8" y1="63.5" x2="48.26" y2="60.96" x3="49.53" y3="80.01" textsize="1.778" textratio="15" layer="47" dtype="horizontal" unit="inch"/>
+<dimension x1="50.8" y1="0" x2="48.26" y2="2.54" x3="59.69" y3="1.27" textsize="1.778" textratio="15" layer="47" dtype="vertical" unit="inch"/>
+<dimension x1="50.8" y1="0" x2="48.26" y2="2.54" x3="49.53" y3="-5.08" textsize="1.778" textratio="15" layer="47" dtype="horizontal" unit="inch"/>
+<dimension x1="0" y1="0" x2="2.54" y2="2.54" x3="1.27" y3="-5.08" textsize="1.778" textratio="15" layer="47" dtype="horizontal" unit="inch"/>
+<dimension x1="0" y1="0" x2="10.795" y2="6.477" x3="5.3975" y3="-10.16" textsize="1.778" textratio="15" layer="47" dtype="horizontal" unit="inch"/>
+<dimension x1="0" y1="0" x2="22.225" y2="3.683" x3="11.1125" y3="-14.986" textsize="1.778" textratio="15" layer="47" dtype="horizontal" unit="inch"/>
+<dimension x1="0" y1="0" x2="32.385" y2="3.683" x3="16.1925" y3="-18.415" textsize="1.778" textratio="15" layer="47" dtype="horizontal" unit="inch"/>
+<dimension x1="0" y1="0" x2="41.275" y2="5.207" x3="20.6375" y3="-22.352" textsize="1.778" textratio="15" layer="47" dtype="horizontal" unit="inch"/>
+<dimension x1="50.8" y1="0" x2="49.53" y2="30.48" x3="63.5" y3="15.24" textsize="1.778" textratio="15" layer="47" dtype="vertical" unit="inch"/>
+<dimension x1="50.8" y1="0" x2="49.53" y2="45.72" x3="67.31" y3="22.86" textsize="1.778" textratio="15" layer="47" dtype="vertical" unit="inch"/>
+<dimension x1="0" y1="0" x2="1.27" y2="7.62" x3="-10.16" y3="3.81" textsize="1.778" textratio="15" layer="47" dtype="vertical" unit="inch"/>
+<dimension x1="0" y1="0" x2="1.27" y2="20.32" x3="-13.97" y3="10.16" textsize="1.778" textratio="15" layer="47" dtype="vertical" unit="inch"/>
+<dimension x1="0" y1="0" x2="4.064" y2="25.019" x3="-17.78" y3="12.5095" textsize="1.778" textratio="15" layer="47" dtype="vertical" unit="inch"/>
+<dimension x1="0" y1="0" x2="1.27" y2="38.1" x3="-21.59" y3="19.05" textsize="1.778" textratio="15" layer="47" dtype="vertical" unit="inch"/>
+<dimension x1="0" y1="0" x2="1.27" y2="55.88" x3="-25.4" y3="27.94" textsize="1.778" textratio="15" layer="47" dtype="vertical" unit="inch"/>
+<text x="10.16" y="-29.21" size="1.778" layer="47" font="vector" ratio="15">UNITS IN INCHES</text>
+<dimension x1="0" y1="63.5" x2="7.62" y2="62.23" x3="3.81" y3="77.47" textsize="1.778" textratio="15" layer="47" dtype="horizontal" unit="inch"/>
+<dimension x1="0" y1="63.5" x2="15.24" y2="62.23" x3="7.62" y3="82.55" textsize="1.778" textratio="15" layer="47" dtype="horizontal" unit="inch"/>
+<dimension x1="0" y1="63.5" x2="20.828" y2="58.674" x3="10.414" y3="87.63" textsize="1.778" textratio="15" layer="47" dtype="horizontal" unit="inch"/>
+<dimension x1="0" y1="63.5" x2="29.972" y2="58.674" x3="14.986" y3="93.98" textsize="1.778" textratio="15" layer="47" dtype="horizontal" unit="inch"/>
+<dimension x1="0" y1="0" x2="10.668" y2="17.78" x3="-32.639" y3="8.89" textsize="1.778" textratio="15" layer="47" dtype="vertical" unit="inch"/>
+<dimension x1="0" y1="0" x2="10.668" y2="49.276" x3="-38.1" y3="24.638" textsize="1.778" textratio="15" layer="47" dtype="vertical" unit="inch"/>
+<dimension x1="0" y1="63.5" x2="10.541" y2="49.276" x3="5.2705" y3="103.759" textsize="1.778" textratio="15" layer="47" dtype="horizontal" unit="inch"/>
+<dimension x1="0" y1="63.5" x2="40.132" y2="49.276" x3="20.066" y3="109.855" textsize="1.778" textratio="15" layer="47" dtype="horizontal" unit="inch"/>
 </plain>
 <libraries>
 <library name="SparkFun-Resistors">
@@ -22088,10 +22114,10 @@ These are the minimums &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabili
 <attribute name="NAME" x="13.2588" y="39.624" size="0.8128" layer="25" font="vector" ratio="18" rot="R90" align="bottom-center"/>
 <attribute name="PROD_ID" value="CAP-07822" x="11.6078" y="39.624" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="FRAME3" library="SparkFun-Aesthetics" package="DUMMY" value="FRAME-LETTERNO_PACKAGE" x="-7.62" y="-13.97" smashed="yes">
-<attribute name="DESIGNER" value="Nobody" x="-7.62" y="-13.97" size="1.778" layer="27" display="off"/>
-<attribute name="REV" value="v10" x="-7.62" y="-13.97" size="1.778" layer="27" display="off"/>
-<attribute name="VERSION" value="v10" x="-7.62" y="-13.97" size="1.778" layer="27" display="off"/>
+<element name="FRAME3" library="SparkFun-Aesthetics" package="DUMMY" value="FRAME-LETTERNO_PACKAGE" x="-7.62" y="-40.64" smashed="yes">
+<attribute name="DESIGNER" value="Nobody" x="-7.62" y="-40.64" size="1.778" layer="27" display="off"/>
+<attribute name="REV" value="v10" x="-7.62" y="-40.64" size="1.778" layer="27" display="off"/>
+<attribute name="VERSION" value="v10" x="-7.62" y="-40.64" size="1.778" layer="27" display="off"/>
 </element>
 <element name="X1" library="SparkFun-Clocks" package="CRYSTAL-SMD-3.2X1.5MM" value="32.768kHz" x="22.733" y="30.607" smashed="yes">
 <attribute name="NAME" x="22.733" y="28.983" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center"/>
@@ -22379,9 +22405,9 @@ These are the minimums &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabili
 <element name="U$30" library="output" package="ARTEMIS0" value="" x="25.4" y="14.732" smashed="yes" rot="MR0"/>
 <element name="U$51" library="output" package="GLOBAL0" value="" x="25.4" y="12.573" smashed="yes" rot="MR0"/>
 <element name="U$52" library="output" package="TRACKER0" value="" x="25.527" y="10.541" smashed="yes" rot="MR0"/>
-<element name="FRAME5" library="SparkFun-Aesthetics" package="CREATIVE_COMMONS" value="FRAME-LEDGER" x="-7.62" y="-13.97" smashed="yes">
-<attribute name="DESIGNER" value="" x="-7.62" y="-13.97" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
-<attribute name="REV" value="v10" x="-7.62" y="-13.97" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
+<element name="FRAME5" library="SparkFun-Aesthetics" package="CREATIVE_COMMONS" value="FRAME-LEDGER" x="-7.62" y="-40.64" smashed="yes">
+<attribute name="DESIGNER" value="" x="-7.62" y="-40.64" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
+<attribute name="REV" value="v10" x="-7.62" y="-40.64" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
 <element name="LOGO1" library="SparkFun-Aesthetics" package="SFE_LOGO_NAME_.1" value="SFE_LOGO_NAME.1_INCH" x="25.4" y="17.399" smashed="yes" rot="MR0"/>
 <element name="3V3SW" library="SparkFun-Connectors" package="PAD.03X.05" value="" x="36.83" y="40.64" smashed="yes" rot="MR0"/>
