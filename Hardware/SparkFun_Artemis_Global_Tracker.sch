@@ -26531,7 +26531,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </connects>
 <technologies>
 <technology name="">
-<attribute name="PROD_ID" value="IC-16020" constant="no"/>
+<attribute name="PROD_ID" value="IC-14694" constant="no"/>
 </technology>
 </technologies>
 </device>

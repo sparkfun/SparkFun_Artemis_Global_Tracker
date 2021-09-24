@@ -22018,7 +22018,7 @@ These are the minimums &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabili
 </element>
 <element name="U3" library="SparkFun-IC-Power" package="TSOT6" value="ADM4210_1TSOT6" x="32.7152" y="46.482" smashed="yes" rot="R270">
 <attribute name="NAME" x="32.0772" y="43.91" size="0.8128" layer="25" font="vector" ratio="18"/>
-<attribute name="PROD_ID" value="IC-16020" x="32.7152" y="46.482" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="PROD_ID" value="IC-14694" x="32.7152" y="46.482" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="Q1" library="SparkFun-DiscreteSemi" package="SOT23-3" value="5.8A/30V/35mΩ" x="30.5562" y="49.3268" smashed="yes" rot="R270">
 <attribute name="NAME" x="30.6832" y="51.7398" size="0.8128" layer="25" font="vector" ratio="18" align="center"/>
