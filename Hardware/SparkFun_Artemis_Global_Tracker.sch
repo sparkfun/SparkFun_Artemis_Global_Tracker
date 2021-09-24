@@ -28467,7 +28467,7 @@ VF @ 100uA = ~100mV</text>
 <wire x1="292.1" y1="203.2" x2="360.68" y2="203.2" width="0.2032" layer="97" style="longdash"/>
 <wire x1="360.68" y1="203.2" x2="431.8" y2="203.2" width="0.2032" layer="97" style="longdash"/>
 <wire x1="114.3" y1="129.54" x2="58.42" y2="129.54" width="0.2032" layer="97" style="longdash"/>
-<text x="187.96" y="193.04" size="2.54" layer="94" font="vector">GPS Power Switch</text>
+<text x="180.34" y="195.58" size="2.54" layer="94" font="vector">GPS Power Switch</text>
 <wire x1="172.72" y1="129.54" x2="114.3" y2="129.54" width="0.2032" layer="97" style="longdash"/>
 <wire x1="172.72" y1="203.2" x2="172.72" y2="129.54" width="0.2032" layer="97" style="longdash"/>
 <text x="241.3" y="195.58" size="2.54" layer="94" font="vector">Antenna Switch</text>
@@ -28487,7 +28487,7 @@ Temperature Sensor</text>
 Pressure &amp; Temperature: 0x76
 Relative Humidity: 0x40</text>
 <text x="56.134" y="121.666" size="2.54" layer="94" font="vector" align="center">USB-to-Serial Converter</text>
-<text x="162.814" y="119.126" size="2.54" layer="94" font="vector" align="center">3.3V @ 600mA
+<text x="162.814" y="114.046" size="1.778" layer="97" font="vector" align="center">3.3V @ 600mA
 Iq = 50uA </text>
 <text x="60.96" y="45.72" size="2.54" layer="94" font="vector" align="center">USB/LiPo Charger</text>
 <text x="27.94" y="15.24" size="1.778" layer="97" font="vector" ratio="15">Charge rate set to 500mA</text>
@@ -28515,6 +28515,7 @@ solar power or
 <wire x1="360.68" y1="203.2" x2="360.68" y2="129.54" width="0.2032" layer="97" style="longdash"/>
 <wire x1="231.14" y1="203.2" x2="231.14" y2="129.54" width="0.2032" layer="97" style="longdash"/>
 <text x="228.6" y="119.38" size="1.778" layer="97" font="vector">VIN: 6V MAX</text>
+<text x="139.7" y="119.38" size="2.54" layer="94" font="vector">3.3V Voltage Regulator</text>
 </plain>
 <instances>
 <instance part="JP8" gate="G$1" x="419.1" y="27.94" smashed="yes"/>
@@ -30509,21 +30510,21 @@ solar power or
 <text x="73.66" y="165.1" size="1.778" layer="97" font="vector">Artemis VCC Range:
 1.76-3.6V</text>
 <text x="195.834" y="180.086" size="2.54" layer="94" font="vector" align="center">Bootloader Reset Circuit</text>
-<text x="198.374" y="84.836" size="2.54" layer="94" font="vector" align="center">SWD Program/Debug Interface</text>
+<text x="198.374" y="82.296" size="2.54" layer="94" font="vector" align="center">SWD Program/Debug Interface</text>
 <text x="53.34" y="58.42" size="2.54" layer="94" font="vector">Connections/I2C/Qwiic</text>
-<text x="116.84" y="27.94" size="1.778" layer="97" font="vector" align="center">I2C Port 1</text>
-<text x="134.62" y="45.72" size="1.778" layer="97" font="vector" align="center">I2C Port 4</text>
+<text x="132.08" y="23.876" size="1.778" layer="97" font="vector" align="center">I2C Port 1</text>
+<text x="132.08" y="54.356" size="1.778" layer="97" font="vector" align="center">I2C Port 4</text>
 <text x="201.422" y="119.38" size="2.54" layer="94" font="vector" align="center">2.4V Reset Supervisor
 (Ensures a clean start on solar power)</text>
 <text x="165.862" y="11.938" size="1.27" layer="94" font="vector">Paul Clark (Based on the SparkFun Artemis and Qwiic ZOE-M8Q)</text>
 <text x="165.862" y="9.398" size="1.27" layer="94" font="vector">Revised by: Pete Lewis</text>
 <wire x1="0" y1="66.04" x2="147.32" y2="66.04" width="0.2032" layer="97" style="longdash"/>
-<wire x1="147.32" y1="66.04" x2="147.32" y2="91.44" width="0.2032" layer="97" style="longdash"/>
-<wire x1="147.32" y1="91.44" x2="147.32" y2="127" width="0.2032" layer="97" style="longdash"/>
+<wire x1="147.32" y1="66.04" x2="147.32" y2="88.9" width="0.2032" layer="97" style="longdash"/>
+<wire x1="147.32" y1="88.9" x2="147.32" y2="127" width="0.2032" layer="97" style="longdash"/>
 <wire x1="147.32" y1="127" x2="147.32" y2="185.42" width="0.2032" layer="97" style="longdash"/>
 <wire x1="147.32" y1="35.56" x2="147.32" y2="66.04" width="0.2032" layer="97" style="longdash"/>
 <wire x1="248.92" y1="127" x2="147.32" y2="127" width="0.2032" layer="97" style="longdash"/>
-<wire x1="248.92" y1="91.44" x2="147.32" y2="91.44" width="0.2032" layer="97" style="longdash"/>
+<wire x1="248.92" y1="88.9" x2="147.32" y2="88.9" width="0.2032" layer="97" style="longdash"/>
 </plain>
 <instances>
 <instance part="FRAME3" gate="G$1" x="0" y="0" smashed="yes"/>
@@ -30625,32 +30626,32 @@ solar power or
 <attribute name="NAME" x="208.534" y="144.78" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
 <attribute name="VALUE" x="216.154" y="144.78" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
 </instance>
-<instance part="GND61" gate="1" x="182.88" y="60.96" smashed="yes">
-<attribute name="VALUE" x="182.88" y="60.706" size="1.778" layer="96" font="vector" align="top-center"/>
+<instance part="GND61" gate="1" x="182.88" y="58.42" smashed="yes">
+<attribute name="VALUE" x="182.88" y="58.166" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
-<instance part="DEBUG" gate="G$1" x="198.12" y="68.58" smashed="yes">
-<attribute name="NAME" x="187.96" y="76.454" size="1.778" layer="95" font="vector"/>
-<attribute name="VALUE" x="187.96" y="61.214" size="1.778" layer="96" font="vector"/>
+<instance part="DEBUG" gate="G$1" x="198.12" y="66.04" smashed="yes">
+<attribute name="NAME" x="187.96" y="73.914" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="187.96" y="58.674" size="1.778" layer="96" font="vector"/>
 </instance>
-<instance part="SUPPLY38" gate="G$1" x="182.88" y="76.2" smashed="yes">
-<attribute name="VALUE" x="182.88" y="78.994" size="1.778" layer="96" font="vector" align="bottom-center"/>
+<instance part="SUPPLY38" gate="G$1" x="182.88" y="73.66" smashed="yes">
+<attribute name="VALUE" x="182.88" y="76.454" size="1.778" layer="96" font="vector" align="bottom-center"/>
 </instance>
-<instance part="QWIIC" gate="G$1" x="109.22" y="48.26" smashed="yes">
-<attribute name="VALUE" x="104.14" y="42.926" size="1.778" layer="96" font="vector" align="top-left"/>
-<attribute name="NAME" x="104.14" y="56.134" size="1.778" layer="95" font="vector"/>
+<instance part="QWIIC" gate="G$1" x="109.22" y="45.72" smashed="yes">
+<attribute name="VALUE" x="104.14" y="40.386" size="1.778" layer="96" font="vector" align="top-left"/>
+<attribute name="NAME" x="104.14" y="53.594" size="1.778" layer="95" font="vector"/>
 </instance>
-<instance part="GND62" gate="1" x="119.38" y="40.64" smashed="yes">
-<attribute name="VALUE" x="119.38" y="40.386" size="1.778" layer="96" font="vector" align="top-center"/>
+<instance part="GND62" gate="1" x="119.38" y="38.1" smashed="yes">
+<attribute name="VALUE" x="119.38" y="37.846" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
-<instance part="SUPPLY39" gate="G$1" x="119.38" y="55.88" smashed="yes">
-<attribute name="VALUE" x="119.38" y="58.674" size="1.778" layer="96" font="vector" align="bottom-center"/>
+<instance part="SUPPLY39" gate="G$1" x="119.38" y="53.34" smashed="yes">
+<attribute name="VALUE" x="119.38" y="56.134" size="1.778" layer="96" font="vector" align="bottom-center"/>
 </instance>
-<instance part="I2C" gate="G$1" x="93.98" y="17.78" smashed="yes">
-<attribute name="VALUE" x="88.9" y="12.446" size="1.778" layer="96" font="vector" align="top-left"/>
-<attribute name="NAME" x="88.9" y="25.654" size="1.778" layer="95" font="vector"/>
+<instance part="I2C" gate="G$1" x="109.22" y="15.24" smashed="yes">
+<attribute name="VALUE" x="104.14" y="9.906" size="1.778" layer="96" font="vector" align="top-left"/>
+<attribute name="NAME" x="104.14" y="23.114" size="1.778" layer="95" font="vector"/>
 </instance>
-<instance part="GND7" gate="1" x="104.14" y="10.16" smashed="yes" rot="MR0">
-<attribute name="VALUE" x="106.68" y="7.62" size="1.778" layer="96" font="vector" rot="MR0"/>
+<instance part="GND7" gate="1" x="119.38" y="7.62" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="121.92" y="5.08" size="1.778" layer="96" font="vector" rot="MR0"/>
 </instance>
 <instance part="!RESET" gate="G$1" x="12.7" y="12.7" smashed="yes">
 <attribute name="VALUE" x="10.16" y="7.874" size="1.778" layer="96" font="vector"/>
@@ -30666,41 +30667,41 @@ solar power or
 <instance part="SUPPLY6" gate="G$1" x="22.86" y="45.72" smashed="yes">
 <attribute name="VALUE" x="22.86" y="48.514" size="1.778" layer="96" font="vector" align="bottom-center"/>
 </instance>
-<instance part="SUPPLY14" gate="G$1" x="104.14" y="27.94" smashed="yes">
-<attribute name="VALUE" x="104.14" y="30.734" size="1.778" layer="96" font="vector" align="bottom-center"/>
+<instance part="SUPPLY14" gate="G$1" x="119.38" y="25.4" smashed="yes">
+<attribute name="VALUE" x="119.38" y="28.194" size="1.778" layer="96" font="vector" align="bottom-center"/>
 </instance>
-<instance part="GND38" gate="1" x="187.96" y="99.06" smashed="yes">
-<attribute name="VALUE" x="187.96" y="98.806" size="1.778" layer="96" font="vector" align="top-center"/>
+<instance part="GND38" gate="1" x="187.96" y="96.52" smashed="yes">
+<attribute name="VALUE" x="187.96" y="96.266" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
-<instance part="SUPPLY15" gate="G$1" x="187.96" y="111.76" smashed="yes">
-<attribute name="VALUE" x="187.96" y="114.554" size="1.778" layer="96" font="vector" align="bottom-center"/>
+<instance part="SUPPLY15" gate="G$1" x="187.96" y="109.22" smashed="yes">
+<attribute name="VALUE" x="187.96" y="112.014" size="1.778" layer="96" font="vector" align="bottom-center"/>
 </instance>
-<instance part="C24" gate="G$1" x="134.62" y="17.78" smashed="yes">
-<attribute name="NAME" x="136.144" y="20.701" size="1.778" layer="95" font="vector"/>
-<attribute name="VALUE" x="136.144" y="15.621" size="1.778" layer="96" font="vector"/>
+<instance part="C24" gate="G$1" x="91.44" y="15.24" smashed="yes">
+<attribute name="NAME" x="92.964" y="18.161" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="92.964" y="13.081" size="1.778" layer="96" font="vector"/>
 </instance>
-<instance part="SUPPLY17" gate="G$1" x="134.62" y="25.4" smashed="yes">
-<attribute name="VALUE" x="134.62" y="28.194" size="1.778" layer="96" font="vector" align="bottom-center"/>
+<instance part="SUPPLY17" gate="G$1" x="91.44" y="22.86" smashed="yes">
+<attribute name="VALUE" x="91.44" y="25.654" size="1.778" layer="96" font="vector" align="bottom-center"/>
 </instance>
-<instance part="GND37" gate="1" x="134.62" y="10.16" smashed="yes">
-<attribute name="VALUE" x="134.62" y="9.906" size="1.778" layer="96" font="vector" align="top-center"/>
+<instance part="GND37" gate="1" x="91.44" y="7.62" smashed="yes">
+<attribute name="VALUE" x="91.44" y="7.366" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
-<instance part="U8" gate="G$1" x="198.12" y="106.68" smashed="yes">
-<attribute name="NAME" x="193.04" y="112.268" size="1.778" layer="95" font="vector"/>
-<attribute name="VALUE" x="193.04" y="99.06" size="1.778" layer="96" font="vector"/>
+<instance part="U8" gate="G$1" x="198.12" y="104.14" smashed="yes">
+<attribute name="NAME" x="193.04" y="109.728" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="193.04" y="96.52" size="1.778" layer="96" font="vector"/>
 </instance>
 <instance part="LOGO1" gate="G$1" x="190.5" y="38.1" smashed="yes"/>
-<instance part="J10" gate="J1" x="55.88" y="38.1" smashed="yes">
-<attribute name="VALUE" x="50.8" y="30.734" size="1.778" layer="96" font="vector"/>
-<attribute name="NAME" x="50.8" y="46.228" size="1.778" layer="95" font="vector"/>
+<instance part="J10" gate="J1" x="55.88" y="43.18" smashed="yes">
+<attribute name="VALUE" x="50.8" y="35.814" size="1.778" layer="96" font="vector"/>
+<attribute name="NAME" x="50.8" y="51.308" size="1.778" layer="95" font="vector"/>
 </instance>
-<instance part="J11" gate="J1" x="55.88" y="17.78" smashed="yes">
-<attribute name="VALUE" x="50.8" y="10.414" size="1.778" layer="96" font="vector"/>
-<attribute name="NAME" x="50.8" y="25.908" size="1.778" layer="95" font="vector"/>
+<instance part="J11" gate="J1" x="55.88" y="25.4" smashed="yes">
+<attribute name="VALUE" x="50.8" y="18.034" size="1.778" layer="96" font="vector"/>
+<attribute name="NAME" x="50.8" y="33.528" size="1.778" layer="95" font="vector"/>
 </instance>
-<instance part="J13" gate="G$1" x="53.34" y="5.08" smashed="yes">
-<attribute name="VALUE" x="50.8" y="0.254" size="1.778" layer="96" font="vector"/>
-<attribute name="NAME" x="50.8" y="8.128" size="1.778" layer="95" font="vector"/>
+<instance part="J13" gate="G$1" x="53.34" y="12.7" smashed="yes">
+<attribute name="VALUE" x="50.8" y="7.874" size="1.778" layer="96" font="vector"/>
+<attribute name="NAME" x="50.8" y="15.748" size="1.778" layer="95" font="vector"/>
 </instance>
 </instances>
 <busses>
@@ -30760,20 +30761,20 @@ solar power or
 </segment>
 <segment>
 <pinref part="GND61" gate="1" pin="GND"/>
-<wire x1="182.88" y1="66.04" x2="182.88" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="185.42" y1="66.04" x2="182.88" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="63.5" x2="182.88" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="185.42" y1="63.5" x2="182.88" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="DEBUG" gate="G$1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="QWIIC" gate="G$1" pin="1"/>
-<wire x1="116.84" y1="45.72" x2="119.38" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="119.38" y1="45.72" x2="119.38" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="43.18" x2="119.38" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="43.18" x2="119.38" y2="40.64" width="0.1524" layer="91"/>
 <pinref part="GND62" gate="1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="I2C" gate="G$1" pin="1"/>
-<wire x1="101.6" y1="15.24" x2="104.14" y2="15.24" width="0.1524" layer="91"/>
-<wire x1="104.14" y1="15.24" x2="104.14" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="12.7" x2="119.38" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="12.7" x2="119.38" y2="10.16" width="0.1524" layer="91"/>
 <pinref part="GND7" gate="1" pin="GND"/>
 </segment>
 <segment>
@@ -30785,12 +30786,12 @@ solar power or
 <segment>
 <pinref part="GND38" gate="1" pin="GND"/>
 <pinref part="U8" gate="G$1" pin="GND"/>
-<wire x1="190.5" y1="104.14" x2="187.96" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="187.96" y1="104.14" x2="187.96" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="101.6" x2="187.96" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="187.96" y1="101.6" x2="187.96" y2="99.06" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C24" gate="G$1" pin="2"/>
-<wire x1="134.62" y1="12.7" x2="134.62" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="10.16" x2="91.44" y2="12.7" width="0.1524" layer="91"/>
 <pinref part="GND37" gate="1" pin="GND"/>
 </segment>
 </net>
@@ -30822,15 +30823,15 @@ solar power or
 <pinref part="SUPPLY28" gate="G$1" pin="3.3V"/>
 </segment>
 <segment>
-<wire x1="185.42" y1="73.66" x2="182.88" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="182.88" y1="73.66" x2="182.88" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="185.42" y1="71.12" x2="182.88" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="71.12" x2="182.88" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="DEBUG" gate="G$1" pin="VCC"/>
 <pinref part="SUPPLY38" gate="G$1" pin="3.3V"/>
 </segment>
 <segment>
 <pinref part="QWIIC" gate="G$1" pin="2"/>
-<wire x1="116.84" y1="48.26" x2="119.38" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="119.38" y1="48.26" x2="119.38" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="45.72" x2="119.38" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="45.72" x2="119.38" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="SUPPLY39" gate="G$1" pin="3.3V"/>
 </segment>
 <segment>
@@ -30841,19 +30842,19 @@ solar power or
 </segment>
 <segment>
 <pinref part="I2C" gate="G$1" pin="2"/>
-<wire x1="101.6" y1="17.78" x2="104.14" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="15.24" x2="119.38" y2="15.24" width="0.1524" layer="91"/>
 <pinref part="SUPPLY14" gate="G$1" pin="3.3V"/>
-<wire x1="104.14" y1="17.78" x2="104.14" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="15.24" x2="119.38" y2="25.4" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SUPPLY15" gate="G$1" pin="3.3V"/>
 <pinref part="U8" gate="G$1" pin="VCC"/>
-<wire x1="190.5" y1="109.22" x2="187.96" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="187.96" y1="109.22" x2="187.96" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="106.68" x2="187.96" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="187.96" y1="106.68" x2="187.96" y2="109.22" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C24" gate="G$1" pin="1"/>
-<wire x1="134.62" y1="25.4" x2="134.62" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="22.86" x2="91.44" y2="20.32" width="0.1524" layer="91"/>
 <pinref part="SUPPLY17" gate="G$1" pin="3.3V"/>
 </segment>
 </net>
@@ -30864,8 +30865,8 @@ solar power or
 <pinref part="U7" gate="U1" pin="D21(SWDIO/RX1/SCCRST)"/>
 </segment>
 <segment>
-<label x="210.82" y="71.12" size="1.27" layer="95" font="vector" xref="yes"/>
-<wire x1="208.28" y1="71.12" x2="210.82" y2="71.12" width="0.1524" layer="91"/>
+<label x="210.82" y="68.58" size="1.27" layer="95" font="vector" xref="yes"/>
+<wire x1="208.28" y1="68.58" x2="210.82" y2="68.58" width="0.1524" layer="91"/>
 <pinref part="DEBUG" gate="G$1" pin="SWDIO"/>
 </segment>
 </net>
@@ -30903,14 +30904,14 @@ solar power or
 <pinref part="!RESET" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<wire x1="208.28" y1="73.66" x2="210.82" y2="73.66" width="0.1524" layer="91"/>
-<label x="210.82" y="73.66" size="1.27" layer="95" font="vector" xref="yes"/>
+<wire x1="208.28" y1="71.12" x2="210.82" y2="71.12" width="0.1524" layer="91"/>
+<label x="210.82" y="71.12" size="1.27" layer="95" font="vector" xref="yes"/>
 <pinref part="DEBUG" gate="G$1" pin="!RESET"/>
 </segment>
 <segment>
-<label x="208.28" y="106.68" size="1.27" layer="95" font="vector" xref="yes"/>
+<label x="208.28" y="104.14" size="1.27" layer="95" font="vector" xref="yes"/>
 <pinref part="U8" gate="G$1" pin="VOUT"/>
-<wire x1="205.74" y1="106.68" x2="208.28" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="104.14" x2="208.28" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="ARTEMIS_RX0" class="0">
@@ -30970,8 +30971,8 @@ solar power or
 <pinref part="U7" gate="U1" pin="~AD33(SWO/32KHZ)"/>
 </segment>
 <segment>
-<wire x1="208.28" y1="66.04" x2="210.82" y2="66.04" width="0.1524" layer="91"/>
-<label x="210.82" y="66.04" size="1.27" layer="95" font="vector" xref="yes"/>
+<wire x1="208.28" y1="63.5" x2="210.82" y2="63.5" width="0.1524" layer="91"/>
+<label x="210.82" y="63.5" size="1.27" layer="95" font="vector" xref="yes"/>
 <pinref part="DEBUG" gate="G$1" pin="SWO"/>
 </segment>
 </net>
@@ -30982,8 +30983,8 @@ solar power or
 <pinref part="U7" gate="U1" pin="D20(SWDCK/TX1)"/>
 </segment>
 <segment>
-<label x="210.82" y="68.58" size="1.27" layer="95" font="vector" xref="yes"/>
-<wire x1="208.28" y1="68.58" x2="210.82" y2="68.58" width="0.1524" layer="91"/>
+<label x="210.82" y="66.04" size="1.27" layer="95" font="vector" xref="yes"/>
+<wire x1="208.28" y1="66.04" x2="210.82" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="DEBUG" gate="G$1" pin="SWDCLK"/>
 </segment>
 </net>
@@ -31061,8 +31062,8 @@ solar power or
 </segment>
 <segment>
 <pinref part="QWIIC" gate="G$1" pin="4"/>
-<wire x1="116.84" y1="53.34" x2="121.92" y2="53.34" width="0.1524" layer="91"/>
-<label x="121.92" y="53.34" size="1.27" layer="95" font="vector" xref="yes"/>
+<wire x1="116.84" y1="50.8" x2="121.92" y2="50.8" width="0.1524" layer="91"/>
+<label x="121.92" y="50.8" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 </net>
 <net name="ARTEMIS_D40_SDA4" class="0">
@@ -31073,8 +31074,8 @@ solar power or
 </segment>
 <segment>
 <pinref part="QWIIC" gate="G$1" pin="3"/>
-<wire x1="116.84" y1="50.8" x2="121.92" y2="50.8" width="0.1524" layer="91"/>
-<label x="121.92" y="50.8" size="1.27" layer="95" font="vector" xref="yes"/>
+<wire x1="116.84" y1="48.26" x2="121.92" y2="48.26" width="0.1524" layer="91"/>
+<label x="121.92" y="48.26" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 </net>
 <net name="ARTEMIS_D18" class="0">
@@ -31130,8 +31131,8 @@ solar power or
 </segment>
 <segment>
 <pinref part="I2C" gate="G$1" pin="4"/>
-<label x="106.68" y="22.86" size="1.27" layer="95" font="vector" rot="MR180" xref="yes"/>
-<wire x1="101.6" y1="22.86" x2="106.68" y2="22.86" width="0.1524" layer="91"/>
+<label x="121.92" y="20.32" size="1.27" layer="95" font="vector" rot="MR180" xref="yes"/>
+<wire x1="116.84" y1="20.32" x2="121.92" y2="20.32" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="ARTEMIS_D9_SDA" class="0">
@@ -31142,8 +31143,8 @@ solar power or
 </segment>
 <segment>
 <pinref part="I2C" gate="G$1" pin="3"/>
-<wire x1="101.6" y1="20.32" x2="106.68" y2="20.32" width="0.1524" layer="91"/>
-<label x="106.68" y="20.32" size="1.27" layer="95" font="vector" rot="MR180" xref="yes"/>
+<wire x1="116.84" y1="17.78" x2="121.92" y2="17.78" width="0.1524" layer="91"/>
+<label x="121.92" y="17.78" size="1.27" layer="95" font="vector" rot="MR180" xref="yes"/>
 </segment>
 </net>
 <net name="ARTEMIS_D10" class="0">
@@ -31216,8 +31217,8 @@ solar power or
 <label x="121.92" y="86.36" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 <segment>
-<wire x1="60.96" y1="38.1" x2="63.5" y2="38.1" width="0.1524" layer="91"/>
-<label x="63.5" y="38.1" size="1.27" layer="95" font="vector" rot="MR180" xref="yes"/>
+<wire x1="60.96" y1="43.18" x2="63.5" y2="43.18" width="0.1524" layer="91"/>
+<label x="63.5" y="43.18" size="1.27" layer="95" font="vector" rot="MR180" xref="yes"/>
 <pinref part="J10" gate="J1" pin="2"/>
 </segment>
 </net>
@@ -31228,8 +31229,8 @@ solar power or
 <label x="121.92" y="83.82" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 <segment>
-<wire x1="60.96" y1="40.64" x2="63.5" y2="40.64" width="0.1524" layer="91"/>
-<label x="63.5" y="40.64" size="1.27" layer="95" font="vector" rot="MR180" xref="yes"/>
+<wire x1="60.96" y1="45.72" x2="63.5" y2="45.72" width="0.1524" layer="91"/>
+<label x="63.5" y="45.72" size="1.27" layer="95" font="vector" rot="MR180" xref="yes"/>
 <pinref part="J10" gate="J1" pin="3"/>
 </segment>
 </net>
@@ -31240,8 +31241,8 @@ solar power or
 <label x="48.26" y="101.6" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<wire x1="60.96" y1="35.56" x2="63.5" y2="35.56" width="0.1524" layer="91"/>
-<label x="63.5" y="35.56" size="1.27" layer="95" font="vector" xref="yes"/>
+<wire x1="60.96" y1="40.64" x2="63.5" y2="40.64" width="0.1524" layer="91"/>
+<label x="63.5" y="40.64" size="1.27" layer="95" font="vector" xref="yes"/>
 <pinref part="J10" gate="J1" pin="1"/>
 </segment>
 </net>
@@ -31252,8 +31253,8 @@ solar power or
 <label x="48.26" y="104.14" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<wire x1="60.96" y1="22.86" x2="63.5" y2="22.86" width="0.1524" layer="91"/>
-<label x="63.5" y="22.86" size="1.27" layer="95" font="vector" xref="yes"/>
+<wire x1="60.96" y1="30.48" x2="63.5" y2="30.48" width="0.1524" layer="91"/>
+<label x="63.5" y="30.48" size="1.27" layer="95" font="vector" xref="yes"/>
 <pinref part="J11" gate="J1" pin="4"/>
 </segment>
 </net>
@@ -31265,8 +31266,8 @@ solar power or
 </segment>
 <segment>
 <pinref part="J11" gate="J1" pin="3"/>
-<wire x1="60.96" y1="20.32" x2="63.5" y2="20.32" width="0.1524" layer="91"/>
-<label x="63.5" y="20.32" size="1.27" layer="95" font="vector" xref="yes"/>
+<wire x1="60.96" y1="27.94" x2="63.5" y2="27.94" width="0.1524" layer="91"/>
+<label x="63.5" y="27.94" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 </net>
 <net name="ARTEMIS_D15" class="0">
@@ -31277,8 +31278,8 @@ solar power or
 </segment>
 <segment>
 <pinref part="J11" gate="J1" pin="2"/>
-<wire x1="60.96" y1="17.78" x2="63.5" y2="17.78" width="0.1524" layer="91"/>
-<label x="63.5" y="17.78" size="1.27" layer="95" font="vector" xref="yes"/>
+<wire x1="60.96" y1="25.4" x2="63.5" y2="25.4" width="0.1524" layer="91"/>
+<label x="63.5" y="25.4" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 </net>
 <net name="ARTEMIS_AD12" class="0">
@@ -31289,8 +31290,8 @@ solar power or
 </segment>
 <segment>
 <pinref part="J11" gate="J1" pin="1"/>
-<wire x1="60.96" y1="15.24" x2="63.5" y2="15.24" width="0.1524" layer="91"/>
-<label x="63.5" y="15.24" size="1.27" layer="95" font="vector" xref="yes"/>
+<wire x1="60.96" y1="22.86" x2="63.5" y2="22.86" width="0.1524" layer="91"/>
+<label x="63.5" y="22.86" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 </net>
 <net name="ARTEMIS_AD32" class="0">
@@ -31301,8 +31302,8 @@ solar power or
 </segment>
 <segment>
 <pinref part="J10" gate="J1" pin="4"/>
-<wire x1="60.96" y1="43.18" x2="63.5" y2="43.18" width="0.1524" layer="91"/>
-<label x="63.5" y="43.18" size="1.27" layer="95" font="vector" xref="yes"/>
+<wire x1="60.96" y1="48.26" x2="63.5" y2="48.26" width="0.1524" layer="91"/>
+<label x="63.5" y="48.26" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 </net>
 <net name="ARTEMIS_D37" class="0">
@@ -31313,8 +31314,8 @@ solar power or
 </segment>
 <segment>
 <pinref part="J13" gate="G$1" pin="1"/>
-<wire x1="60.96" y1="5.08" x2="63.5" y2="5.08" width="0.1524" layer="91"/>
-<label x="63.5" y="5.08" size="1.27" layer="95" font="vector" xref="yes"/>
+<wire x1="60.96" y1="12.7" x2="63.5" y2="12.7" width="0.1524" layer="91"/>
+<label x="63.5" y="12.7" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 </net>
 </nets>
