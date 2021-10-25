@@ -22,7 +22,7 @@
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
@@ -21928,9 +21928,9 @@ These are the minimums &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabili
 <attribute name="NAME" x="36.1188" y="47.9552" size="0.8128" layer="25" font="vector" ratio="18" rot="R270"/>
 <attribute name="PROD_ID" value="RES-14962" x="35.2298" y="46.9392" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="R9" library="SparkFun-Resistors" package="0603" value="0.012ohm" x="33.0962" y="50.1904" smashed="yes" rot="R90">
+<element name="R9" library="SparkFun-Resistors" package="0603" value="0.015ohm" x="33.0962" y="50.1904" smashed="yes" rot="R90">
 <attribute name="NAME" x="34.7472" y="49.5554" size="0.8128" layer="25" font="vector" ratio="18" rot="R90"/>
-<attribute name="PROD_ID" value="RES-14691" x="33.0962" y="50.1904" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="PROD_ID" value="RES-16305" x="33.0962" y="50.1904" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" value="0.012ohm" x="33.8582" y="51.9684" size="0.4064" layer="27" font="vector" ratio="10" rot="R90"/>
 </element>
 <element name="R11" library="SparkFun-Resistors" package="0402-TIGHT" value="100" x="33.9852" y="43.688" smashed="yes" rot="R270">
@@ -22537,9 +22537,9 @@ These are the minimums &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabili
 <attribute name="NAME" x="87.4268" y="47.9552" size="0.8128" layer="25" font="vector" ratio="18" rot="R270"/>
 <attribute name="PROD_ID" value="RES-14962" x="86.5378" y="46.9392" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="R34" library="SparkFun-Resistors" package="0603" value="0.012ohm" x="84.4042" y="50.1904" smashed="yes" rot="R90">
+<element name="R34" library="SparkFun-Resistors" package="0603" value="0.015ohm" x="84.4042" y="50.1904" smashed="yes" rot="R90">
 <attribute name="NAME" x="86.0552" y="49.5554" size="0.8128" layer="25" font="vector" ratio="18" rot="R90"/>
-<attribute name="PROD_ID" value="RES-14691" x="84.4042" y="50.1904" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="PROD_ID" value="RES-16305" x="84.4042" y="50.1904" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" value="0.012ohm" x="85.1662" y="51.9684" size="0.4064" layer="27" font="vector" ratio="10" rot="R90"/>
 </element>
 <element name="R35" library="SparkFun-Resistors" package="0402-TIGHT" value="100" x="85.2932" y="43.688" smashed="yes" rot="R270">
@@ -23146,9 +23146,9 @@ These are the minimums &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabili
 <attribute name="NAME" x="36.1188" y="124.1552" size="0.8128" layer="25" font="vector" ratio="18" rot="R270"/>
 <attribute name="PROD_ID" value="RES-14962" x="35.2298" y="123.1392" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="R64" library="SparkFun-Resistors" package="0603" value="0.012ohm" x="33.0962" y="126.3904" smashed="yes" rot="R90">
+<element name="R64" library="SparkFun-Resistors" package="0603" value="0.015ohm" x="33.0962" y="126.3904" smashed="yes" rot="R90">
 <attribute name="NAME" x="34.7472" y="125.7554" size="0.8128" layer="25" font="vector" ratio="18" rot="R90"/>
-<attribute name="PROD_ID" value="RES-14691" x="33.0962" y="126.3904" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="PROD_ID" value="RES-16305" x="33.0962" y="126.3904" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" value="0.012ohm" x="33.8582" y="128.1684" size="0.4064" layer="27" font="vector" ratio="10" rot="R90"/>
 </element>
 <element name="R65" library="SparkFun-Resistors" package="0402-TIGHT" value="100" x="33.9852" y="119.888" smashed="yes" rot="R270">
@@ -23755,9 +23755,9 @@ These are the minimums &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabili
 <attribute name="NAME" x="87.4268" y="124.1552" size="0.8128" layer="25" font="vector" ratio="18" rot="R270"/>
 <attribute name="PROD_ID" value="RES-14962" x="86.5378" y="123.1392" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="R94" library="SparkFun-Resistors" package="0603" value="0.012ohm" x="84.4042" y="126.3904" smashed="yes" rot="R90">
+<element name="R94" library="SparkFun-Resistors" package="0603" value="0.015ohm" x="84.4042" y="126.3904" smashed="yes" rot="R90">
 <attribute name="NAME" x="86.0552" y="125.7554" size="0.8128" layer="25" font="vector" ratio="18" rot="R90"/>
-<attribute name="PROD_ID" value="RES-14691" x="84.4042" y="126.3904" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="PROD_ID" value="RES-16305" x="84.4042" y="126.3904" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" value="0.012ohm" x="85.1662" y="128.1684" size="0.4064" layer="27" font="vector" ratio="10" rot="R90"/>
 </element>
 <element name="R95" library="SparkFun-Resistors" package="0402-TIGHT" value="100" x="85.2932" y="119.888" smashed="yes" rot="R270">
