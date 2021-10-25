@@ -1258,21 +1258,22 @@ It has a reduced top mask to make it harder to install upside-down.</description
 </device>
 </devices>
 </deviceset>
-<deviceset name="0.012OHM" prefix="R">
-<description>Generic Resistor Package</description>
+<deviceset name="0.015OHM" prefix="R">
+<description>&lt;h3&gt;0.015Ω resistor (aka 15mOhms)&lt;/h3&gt;
+&lt;p&gt;A resistor is a passive two-terminal electrical component that implements electrical resistance as a circuit element. Resistors act to reduce current flow, and, at the same time, act to lower voltage levels within circuits. - Wikipedia&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
 </gates>
 <devices>
-<device name="0603" package="0603">
+<device name="_1%_1/3W_0603" package="0603">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name="">
-<attribute name="PROD_ID" value="RES-14691" constant="no"/>
-<attribute name="VALUE" value="0.012ohm" constant="no"/>
+<attribute name="PROD_ID" value="RES-16305" constant="no"/>
+<attribute name="VALUE" value="0.015ohm" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -28191,7 +28192,7 @@ Source: &lt;a href="http://www.te.com/commerce/DocumentDelivery/DDEController?Ac
 <part name="C4" library="SparkFun-Capacitors" deviceset="0.22UF" device="-0603-25V-10%" value="0.22uF"/>
 <part name="JP1" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_3_1-NC_TRACE" device="_SILK" package3d_urn="urn:adsk.eagle:package:39288/1" value="JUMPER-SMT_3_1-NC_TRACE_SILK"/>
 <part name="R10" library="SparkFun-Resistors" deviceset="100OHM" device="-0402-TIGHT-1/16W-1%" value="100"/>
-<part name="R9" library="SparkFun-Resistors" deviceset="0.012OHM" device="0603" value="0.012ohm"/>
+<part name="R9" library="SparkFun-Resistors" deviceset="0.015OHM" device="_1%_1/3W_0603" value="0.015ohm"/>
 <part name="R11" library="SparkFun-Resistors" deviceset="100OHM" device="-0402-TIGHT-1/16W-1%" value="100"/>
 <part name="SC1+" library="SparkFun-Connectors" deviceset="CONN_01" device="PTH_NO_SILK_YES_STOP"/>
 <part name="SC1-" library="SparkFun-Connectors" deviceset="CONN_01" device="PTH_NO_SILK_YES_STOP"/>
