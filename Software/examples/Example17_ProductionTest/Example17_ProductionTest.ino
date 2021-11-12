@@ -77,17 +77,21 @@
 #define SUPPLY_BIT_MASK 0x0001
 
 #include <Wire.h>
-TwoWire testWire(4); //Will use Artemis pads 39/40 to talk to the AGT Test Header
+TwoWire testWire(39,40); //Will use Artemis pads 39/40 to talk to the AGT Test Header
+
+const byte PIN_AGTWIRE_SCL = 8;
+const byte PIN_AGTWIRE_SDA = 9;
+TwoWire agtWire(PIN_AGTWIRE_SDA, PIN_AGTWIRE_SCL); //Create an I2C port using pads 8 (SCL) and 9 (SDA)
 
 #include <SparkFun_PHT_MS8607_Arduino_Library.h> //http://librarymanager/All#SparkFun_PHT_MS8607
 
 //Create an instance of the MS8607 object
-//The on-board MS8607 is connected to I2C Port 1 (Wire1): SCL = D8; SDA = D9
+//The on-board MS8607 is connected to I2C Port 1 (agtWire): SCL = D8; SDA = D9
 MS8607 barometricSensor;
 
-#include "SparkFun_Ublox_Arduino_Library.h" //http://librarymanager/All#SparkFun_Ublox_GPS
-//The ZOE-M8Q shares I2C Port 1 (Wire1) with the MS8607: SCL = D8; SDA = D9
-SFE_UBLOX_GPS myGPS;
+#include "SparkFun_u-blox_GNSS_Arduino_Library.h" //http://librarymanager/All#SparkFun_u-blox_GNSS
+//The ZOE-M8Q shares I2C Port 1 (agtWire) with the MS8607: SCL = D8; SDA = D9
+SFE_UBLOX_GNSS myGPS;
 
 //Globals
 bool testFailed = false; // Flag to show if the test failed (but might have continued anyway if noFail is defined)
@@ -210,7 +214,9 @@ void setup()
   testWire.begin();
 
   // Set up the I2C pins for the MS8607
-  Wire1.begin();
+  agtWire.begin();
+  agtWire.setClock(100000); // Use 100kHz for best performance
+  setAGTWirePullups(0); // Remove the pull-ups from the I2C pins (internal to the Artemis) for best performance
 
   // Start the console serial port
   Serial.begin(115200);
@@ -267,7 +273,7 @@ void setup()
     fail();
   }
 
-  int div3 = analogRead(ADC_INTERNAL_VCC_DIV3); //Read VCC across a 1/3 resistor divider
+  int div3 = analogReadVCCDiv3(); //Read VCC across a 1/3 resistor divider
   float vcc = (float)div3 * 3.0 * 2.0 / 16384.0; //Convert 1/3 VCC to VCC
   Serial.print(F("Test 1 Step 2: VCC is: "));
   Serial.print(vcc, 2);
@@ -284,7 +290,7 @@ void setup()
     fail();
   }
 
-  int vss = analogRead(ADC_INTERNAL_VSS); //Read internal VSS (should be 0)
+  int vss = analogReadVSS(); //Read internal VSS (should be 0)
   Serial.print(F("Test 1 Step 3: VSS: "));
   Serial.print(vss);
   Serial.println();
@@ -304,10 +310,10 @@ void setup()
 // Test 2 - check the on-board MS8607
 // -----------------------------------------------------------------------
 
-  if (barometricSensor.begin(Wire1) == false)
+  if (barometricSensor.begin(agtWire) == false)
   {
     Serial.println(F("Test 2 Step 1: MS8607 sensor did not respond. Trying again..."));
-    if (barometricSensor.begin(Wire1) == false)
+    if (barometricSensor.begin(agtWire) == false)
     {
       Serial.println(F("Test 2 Step 1: MS8607 sensor did not respond (2nd attempt)!"));
       fail();
@@ -378,7 +384,7 @@ void setup()
   gnssON(); // Enable power for the ZOE
   delay(2000); // Let the ZOE power up
 
-  if (myGPS.begin(Wire1) == false) //Connect to the Ublox module using Wire port
+  if (myGPS.begin(agtWire) == false) //Connect to the Ublox module using Wire port
   {
     Serial.println(F("Test 3 Step 1: ZOE not detected at default I2C address!"));
     gnssOFF();
@@ -947,8 +953,8 @@ void setup()
   
         // Code taken (mostly) from the LowPower_WithWake example and the and OpenLog_Artemis PowerDownRTC example
         
-        // Turn off ADC
-        power_adc_disable();
+        // Disable ADC
+        powerControlADC(false);
     
         // Set the clock frequency.
         am_hal_clkgen_control(AM_HAL_CLKGEN_CONTROL_SYSCLK_MAX, 0);
@@ -1056,8 +1062,8 @@ void setup()
         am_hal_gpio_pinconfig(20 /* SWDCLK */, g_AM_BSP_GPIO_SWDCK);
         am_hal_gpio_pinconfig(21 /* SWDIO */, g_AM_BSP_GPIO_SWDIO);
   
-        // Turn on ADC
-        ap3_adc_setup();
+        // Enable ADC
+        initializeADC();
   
         // Send the time again and check the interval
         loop_step = send_time_2;
@@ -1267,4 +1273,41 @@ void fail() // Stop the test
   while(1)
     ; // Do nothing more
 #endif
+}
+
+
+void setAGTWirePullups(uint32_t i2cBusPullUps)
+{
+  //Change SCL and SDA pull-ups manually using pin_config
+  am_hal_gpio_pincfg_t sclPinCfg = g_AM_BSP_GPIO_IOM1_SCL;
+  am_hal_gpio_pincfg_t sdaPinCfg = g_AM_BSP_GPIO_IOM1_SDA;
+
+  if (i2cBusPullUps == 0)
+  {
+    sclPinCfg.ePullup = AM_HAL_GPIO_PIN_PULLUP_NONE; // No pull-ups
+    sdaPinCfg.ePullup = AM_HAL_GPIO_PIN_PULLUP_NONE;
+  }
+  else if (i2cBusPullUps == 1)
+  {
+    sclPinCfg.ePullup = AM_HAL_GPIO_PIN_PULLUP_1_5K; // Use 1K5 pull-ups
+    sdaPinCfg.ePullup = AM_HAL_GPIO_PIN_PULLUP_1_5K;
+  }
+  else if (i2cBusPullUps == 6)
+  {
+    sclPinCfg.ePullup = AM_HAL_GPIO_PIN_PULLUP_6K; // Use 6K pull-ups
+    sdaPinCfg.ePullup = AM_HAL_GPIO_PIN_PULLUP_6K;
+  }
+  else if (i2cBusPullUps == 12)
+  {
+    sclPinCfg.ePullup = AM_HAL_GPIO_PIN_PULLUP_12K; // Use 12K pull-ups
+    sdaPinCfg.ePullup = AM_HAL_GPIO_PIN_PULLUP_12K;
+  }
+  else
+  {
+    sclPinCfg.ePullup = AM_HAL_GPIO_PIN_PULLUP_24K; // Use 24K pull-ups
+    sdaPinCfg.ePullup = AM_HAL_GPIO_PIN_PULLUP_24K;
+  }
+
+  pin_config(PinName(PIN_AGTWIRE_SCL), sclPinCfg);
+  pin_config(PinName(PIN_AGTWIRE_SDA), sdaPinCfg);
 }
