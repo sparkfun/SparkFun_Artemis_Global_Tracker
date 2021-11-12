@@ -78,6 +78,7 @@
 #define LED                 19 // White LED
 #define iridiumPwrEN        22 // ADM4210 ON: pull high to enable power for the Iridium 9603N
 #define gnssEN              26 // GNSS Enable: pull low to enable power for the GNSS (via Q2)
+#define gnssBckpBatChgEN    44 // GNSS backup battery charge enable; when set as INPUT = disabled, when OUTPUT+LOW = charging.
 #define superCapChgEN       27 // LTC3225 super capacitor charger: pull high to enable the super capacitor charger
 #define superCapPGOOD       28 // Input for the LTC3225 super capacitor charger PGOOD signal
 #define busVoltageMonEN     34 // Bus voltage monitor enable: pull high to enable bus voltage monitoring (via Q4 and Q3)
@@ -281,6 +282,7 @@ void setup()
   pinMode(LED, OUTPUT); // Make the LED pin an output
 
   gnssOFF(); // Disable power for the GNSS
+  pinMode(gnssBckpBatChgEN, INPUT); // GNSS backup batttery charge control; input = disable charging; output+low=charging. 
   pinMode(geofencePin, INPUT); // Configure the geofence pin as an input
 
   attachInterrupt(digitalPinToInterrupt(geofencePin), geofenceISR, FALLING); // Call geofenceISR whenever geofencePin goes low
@@ -604,6 +606,9 @@ void loop()
     {
       Serial.println(F("Powering up the GNSS..."));
       gnssON(); // Enable power for the GNSS
+      pinMode(gnssBckpBatChgEN, OUTPUT); // GNSS backup batttery charge control; output + low = enable charging
+      digitalWrite(gnssBckpBatChgEN, LOW);
+      //pinMode(gnssBckpBatChgEN, INPUT); // GNSS backup batttery charge control; input = disable charging
 
       // Give the GNSS 2secs to power up in a non-blocking way (so we can respond to config serial data as soon as it arrives)
       delayCount = 0;
