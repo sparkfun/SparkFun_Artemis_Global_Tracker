@@ -77,10 +77,10 @@
 #define SUPPLY_BIT_MASK 0x0001
 
 #include <Wire.h>
-TwoWire testWire(39,40); //Will use Artemis pads 39/40 to talk to the AGT Test Header
+TwoWire testWire(D40,D39); //Will use Artemis pads 39/40 to talk to the AGT Test Header
 
-const byte PIN_AGTWIRE_SCL = 8;
-const byte PIN_AGTWIRE_SDA = 9;
+const byte PIN_AGTWIRE_SCL = D8;
+const byte PIN_AGTWIRE_SDA = D9;
 TwoWire agtWire(PIN_AGTWIRE_SDA, PIN_AGTWIRE_SCL); //Create an I2C port using pads 8 (SCL) and 9 (SDA)
 
 #include <SparkFun_PHT_MS8607_Arduino_Library.h> //http://librarymanager/All#SparkFun_PHT_MS8607
