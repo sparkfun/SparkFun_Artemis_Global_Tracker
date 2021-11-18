@@ -27977,7 +27977,7 @@ Used on single circuit logic gates</description>
 <devicesets>
 <deviceset name="74*08" prefix="U" uservalue="yes">
 <description>&lt;h3&gt;Single AND gate&lt;/h3&gt;
-&lt;p&gt;IC GATE AND SNGL 2INPUT SOT353&lt;/p&gt;
+&lt;p&gt;IC GATE AND SNGL 2INPUT (Comes in both SOT353 and SOT23-5)&lt;/p&gt;
 &lt;h4&gt;SparkFun Products&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://www.sparkfun.com/products/11006"&gt;SparkFun LogicBlocks Kit&lt;/a&gt; (KIT-11006)&lt;/li&gt;
@@ -27988,7 +27988,7 @@ Used on single circuit logic gates</description>
 <gate name="G2" symbol="POWER_CONSORT" x="7.62" y="0"/>
 </gates>
 <devices>
-<device name="SE" package="SOT23-5">
+<device name="_W5-7" package="SOT23-5">
 <connects>
 <connect gate="G1" pin="A" pad="1"/>
 <connect gate="G1" pin="B" pad="2"/>
@@ -27998,6 +27998,21 @@ Used on single circuit logic gates</description>
 </connects>
 <technologies>
 <technology name="LVC">
+<attribute name="PROD_ID" value="IC-16359" constant="no"/>
+<attribute name="VALUE" value="74LVC1G08W5-7" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="_SE" package="SOT353">
+<connects>
+<connect gate="G1" pin="A" pad="1"/>
+<connect gate="G1" pin="B" pad="2"/>
+<connect gate="G1" pin="Y" pad="4"/>
+<connect gate="G2" pin="P$V+" pad="5"/>
+<connect gate="G2" pin="P$V-" pad="3"/>
+</connects>
+<technologies>
+<technology name="">
 <attribute name="PROD_ID" value="IC-10841" constant="no"/>
 <attribute name="VALUE" value="74LVC1G08SE" constant="no"/>
 </technology>
@@ -28396,7 +28411,7 @@ Source: &lt;a href="http://www.te.com/commerce/DocumentDelivery/DDEController?Ac
 <part name="GND40" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GND44" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="SUPPLY18" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
-<part name="U12" library="SparkFun-IC-Logic" deviceset="74*08" device="SE" technology="LVC" value="74LVC1G08SE"/>
+<part name="U12" library="SparkFun-IC-Logic" deviceset="74*08" device="_W5-7" technology="LVC" value="74LVC1G08W5-7"/>
 <part name="U11" library="SparkFun-IC-Logic" deviceset="74*1G04" device="SE" technology="LVC" value="74LVC1G04SE"/>
 <part name="R31" library="SparkFun-Resistors" deviceset="20KOHM" device="-0402T-1/16W-1%" value="20k"/>
 <part name="GND51" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
