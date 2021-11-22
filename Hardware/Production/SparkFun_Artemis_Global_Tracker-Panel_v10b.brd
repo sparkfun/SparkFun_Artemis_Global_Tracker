@@ -22352,9 +22352,9 @@ These are the minimums &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabili
 <attribute name="NAME" x="35.7732" y="23.028" size="0.6096" layer="25" ratio="15"/>
 <attribute name="PROD_ID" value="HW-14879" x="37.9032" y="20.32" size="1.778" layer="27" display="off"/>
 </element>
-<element name="U12" library="SparkFun-IC-Logic" package="SOT23-5" value="74LVC1G08SE" x="36.8808" y="42.2148" smashed="yes">
+<element name="U12" library="SparkFun-IC-Logic" package="SOT23-5" value="74LVC1G08W5-7" x="36.8808" y="42.2148" smashed="yes">
 <attribute name="NAME" x="34.9758" y="42.2148" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
-<attribute name="PROD_ID" value="IC-10841" x="36.8808" y="42.2148" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
+<attribute name="PROD_ID" value="IC-16359" x="36.8808" y="42.2148" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 <attribute name="VALUE" x="39.4208" y="42.2148" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="bottom-center"/>
 </element>
 <element name="U11" library="SparkFun-IC-Logic" package="SOT353" value="74LVC1G04SE" x="37.7698" y="45.7708" smashed="yes" rot="R90">
@@ -22961,9 +22961,9 @@ These are the minimums &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabili
 <attribute name="NAME" x="87.0812" y="23.028" size="0.6096" layer="25" ratio="15"/>
 <attribute name="PROD_ID" value="HW-14879" x="89.2112" y="20.32" size="1.778" layer="27" display="off"/>
 </element>
-<element name="U23" library="SparkFun-IC-Logic" package="SOT23-5" value="74LVC1G08SE" x="88.1888" y="42.2148" smashed="yes">
+<element name="U23" library="SparkFun-IC-Logic" package="SOT23-5" value="74LVC1G08W5-7" x="88.1888" y="42.2148" smashed="yes">
 <attribute name="NAME" x="86.2838" y="42.2148" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
-<attribute name="PROD_ID" value="IC-10841" x="88.1888" y="42.2148" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
+<attribute name="PROD_ID" value="IC-16359" x="88.1888" y="42.2148" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 <attribute name="VALUE" x="90.7288" y="42.2148" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="bottom-center"/>
 </element>
 <element name="U24" library="SparkFun-IC-Logic" package="SOT353" value="74LVC1G04SE" x="89.0778" y="45.7708" smashed="yes" rot="R90">
@@ -23570,9 +23570,9 @@ These are the minimums &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabili
 <attribute name="NAME" x="35.7732" y="99.228" size="0.6096" layer="25" ratio="15"/>
 <attribute name="PROD_ID" value="HW-14879" x="37.9032" y="96.52" size="1.778" layer="27" display="off"/>
 </element>
-<element name="U35" library="SparkFun-IC-Logic" package="SOT23-5" value="74LVC1G08SE" x="36.8808" y="118.4148" smashed="yes">
+<element name="U35" library="SparkFun-IC-Logic" package="SOT23-5" value="74LVC1G08W5-7" x="36.8808" y="118.4148" smashed="yes">
 <attribute name="NAME" x="34.9758" y="118.4148" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
-<attribute name="PROD_ID" value="IC-10841" x="36.8808" y="118.4148" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
+<attribute name="PROD_ID" value="IC-16359" x="36.8808" y="118.4148" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 <attribute name="VALUE" x="39.4208" y="118.4148" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="bottom-center"/>
 </element>
 <element name="U36" library="SparkFun-IC-Logic" package="SOT353" value="74LVC1G04SE" x="37.7698" y="121.9708" smashed="yes" rot="R90">
@@ -24179,9 +24179,9 @@ These are the minimums &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabili
 <attribute name="NAME" x="87.0812" y="99.228" size="0.6096" layer="25" ratio="15"/>
 <attribute name="PROD_ID" value="HW-14879" x="89.2112" y="96.52" size="1.778" layer="27" display="off"/>
 </element>
-<element name="U47" library="SparkFun-IC-Logic" package="SOT23-5" value="74LVC1G08SE" x="88.1888" y="118.4148" smashed="yes">
+<element name="U47" library="SparkFun-IC-Logic" package="SOT23-5" value="74LVC1G08W5-7" x="88.1888" y="118.4148" smashed="yes">
 <attribute name="NAME" x="86.2838" y="118.4148" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
-<attribute name="PROD_ID" value="IC-10841" x="88.1888" y="118.4148" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
+<attribute name="PROD_ID" value="IC-16359" x="88.1888" y="118.4148" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 <attribute name="VALUE" x="90.7288" y="118.4148" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="bottom-center"/>
 </element>
 <element name="U48" library="SparkFun-IC-Logic" package="SOT353" value="74LVC1G04SE" x="89.0778" y="121.9708" smashed="yes" rot="R90">
