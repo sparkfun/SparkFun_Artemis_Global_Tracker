@@ -1251,7 +1251,7 @@ It has a reduced top mask to make it harder to install upside-down.</description
 </connects>
 <technologies>
 <technology name="">
-<attribute name="PROD_ID" value="RES-15131"/>
+<attribute name="PROD_ID" value="RES-14972"/>
 <attribute name="VALUE" value="20k"/>
 </technology>
 </technologies>

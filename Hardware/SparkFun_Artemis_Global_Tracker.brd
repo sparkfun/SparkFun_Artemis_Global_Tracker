@@ -22100,7 +22100,7 @@ These are the minimums &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabili
 </element>
 <element name="R31" library="SparkFun-Resistors" package="0402-TIGHT" value="20k" x="39.7764" y="47.1678" smashed="yes" rot="R90">
 <attribute name="NAME" x="39.2144" y="47.1678" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
-<attribute name="PROD_ID" value="RES-15131" x="39.7764" y="47.1678" size="1.778" layer="27" font="vector" ratio="15" rot="R90" display="off"/>
+<attribute name="PROD_ID" value="RES-14972" x="39.7764" y="47.1678" size="1.778" layer="27" font="vector" ratio="15" rot="R90" display="off"/>
 <attribute name="VALUE" x="40.3384" y="47.1678" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
 </element>
 <element name="U$30" library="output" package="ARTEMIS0" value="" x="25.4" y="14.732" smashed="yes" rot="MR0"/>
