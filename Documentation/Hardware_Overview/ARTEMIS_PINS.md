@@ -25,16 +25,16 @@
 | 21 | GPIO28 | ~D28 | LTC3225 PGOOD |
 | 22 | GND | | Power |
 | 23 | GPIO6 | ~D6 | SPI MISO or GPIO |
-| 24 | GPIO32 | ~AD32 | N/C |
+| 24 | GPIO32 | ~AD32 | GPIO |
 | 25 | GPIO25 | ~D25 | Iridium 9603N RX(Out) |
-| 26 | GPIO12 | ~AD12 | N/C |
+| 26 | GPIO12 | ~AD12 | GPIO |
 | 27 | GPIO26 | ~D26 | GPS_EN |
 | 28 | GPIO13 | ~AD13 | Bus Voltage Measure |
-| 29 | GPIO15 | D15 | N/C |
+| 29 | GPIO15 | D15 | GPIO |
 | 30 | GPIO33 | ~AD33/SWO | JTAG SWO |
 | 31 | GPIO34 | AD34 | Bus Voltage Measure Enable |
-| 32 | GPIO11 | ~AD11 | N/C |
-| 33 | GPIO29 | ~AD29 | N/C |
+| 32 | GPIO11 | ~AD11 | GPIO |
+| 33 | GPIO29 | ~AD29 | GPIO |
 | 34 | XO | | 32kHz Xtal Connection for external 32.768kHz RTC crystal |
 | 35 | XI | | 32kHz Xtal Connection for external 32.768kHz RTC crystal |
 | 36 | VDD | | Power |
@@ -45,7 +45,7 @@
 | 41 | GPIO18 | ~D18 | Iridium 9603N Network Available |
 | 42 | GPIO16 | AD16 | N/C |
 | 43 | GPIO17 | D17 | Iridium 9603N ON/OFF |
-| 44 | GPIO31 | ~AD31 | N/C |
+| 44 | GPIO31 | ~AD31 | GPIO |
 | 45 | GPIO41 | D41 | Iridium 9603N Ring Indicator |
 | 46 | GPIO45 | ~D45 | N/C |
 | 47 | GND | | Power |
@@ -53,11 +53,11 @@
 | 49 | GPIO1 | D1 | N/C |
 | 50 | nRESET | | System Reset Pull pin low to reset system |
 | 51 | GPIO0 | D0 | N/C |
-| 52 | GPIO43 | ~D43 | N/C |
-| 53 | GPIO42 | ~D42 | N/C |
+| 52 | GPIO43 | ~D43 | GPIO |
+| 53 | GPIO42 | ~D42 | GPIO |
 | 54 | GPIO3 | D3 | N/C |
 | 55 | GPIO36 | D36 | N/C |
 | 56 | GPIO38 | D38 | N/C |
-| 57 | GPIO37 | ~D37 | N/C |
+| 57 | GPIO37 | ~D37 | GPIO |
 | 58 | GPIO44 | ~D44 | N/C |
 | 59 | GND | | Power |
