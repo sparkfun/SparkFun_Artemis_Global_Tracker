@@ -44,7 +44,7 @@
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="yes"/>
 <layer number="51" name="tDocu" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
@@ -80,7 +80,7 @@
 <layer number="97" name="Info" color="7" fill="1" visible="no" active="no"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="no" active="no"/>
 <layer number="99" name="SpiceOrder" color="7" fill="1" visible="no" active="no"/>
-<layer number="100" name="Muster" color="7" fill="1" visible="no" active="no"/>
+<layer number="100" name="Muster" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="101" name="Patch_Top" color="12" fill="4" visible="no" active="no"/>
 <layer number="102" name="Vscore" color="7" fill="1" visible="no" active="no"/>
 <layer number="103" name="tMap" color="7" fill="1" visible="no" active="no"/>
@@ -21738,7 +21738,7 @@ These are the minimums &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabili
 <attribute name="NAME" x="28.829" y="43.2054" size="0.8128" layer="25" font="vector" ratio="18" align="bottom-center"/>
 <attribute name="PROD_ID" value="RES-16147" x="31.496" y="43.5864" size="1.778" layer="27" display="off"/>
 </element>
-<element name="U4" library="SparkFun-GPS" package="UBLOX_ZOE_M8-0-10" value="U-BLOX_ZOE_M8Q-0-10" x="45.212" y="49.911" smashed="yes">
+<element name="U4" library="SparkFun-GPS" package="UBLOX_ZOE_M8-0-10" value="u-blox_ZOE_M8Q-0-10" x="45.212" y="49.911" smashed="yes">
 <attribute name="NAME" x="46.014" y="52.6396" size="0.8128" layer="25" font="vector" ratio="18"/>
 <attribute name="PROD_ID" value="IC-14251" x="37.592" y="60.071" size="1.778" layer="27" display="off"/>
 </element>

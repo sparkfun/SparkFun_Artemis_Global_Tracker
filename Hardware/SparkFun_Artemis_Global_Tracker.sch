@@ -28240,7 +28240,7 @@ Source: &lt;a href="http://www.te.com/commerce/DocumentDelivery/DDEController?Ac
 <part name="C10" library="SparkFun-Capacitors" deviceset="1.0UF" device="-0603-16V-10%-X7R" value="1.0uF"/>
 <part name="R14" library="SparkFun-Resistors" deviceset="10KOHM" device="-0402-1/10W-0.1%" value="10K"/>
 <part name="GND21" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="U4" library="SparkFun-GPS" deviceset="U-BLOX_ZOE_M8Q-0-10" device=""/>
+<part name="U4" library="SparkFun-GPS" deviceset="U-BLOX_ZOE_M8Q-0-10" device="" value="u-blox_ZOE_M8Q-0-10"/>
 <part name="C11" library="SparkFun-Capacitors" deviceset="4.7UF" device="-0603-6.3V-(10%)" value="4.7uF"/>
 <part name="X2" library="SparkFun-Clocks" deviceset="CRYSTAL-32.768KHZ" device="SMD-3.2X1.5" value="32.768kHz"/>
 <part name="GND22" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
@@ -28461,7 +28461,7 @@ Source: &lt;a href="http://www.te.com/commerce/DocumentDelivery/DDEController?Ac
 <wire x1="292.1" y1="203.2" x2="292.1" y2="279.4" width="0.2032" layer="97" style="longdash"/>
 <wire x1="58.42" y1="203.2" x2="58.42" y2="124.46" width="0.2032" layer="97" style="longdash"/>
 <wire x1="58.42" y1="124.46" x2="0" y2="124.46" width="0.2032" layer="97" style="longdash"/>
-<text x="336.55" y="273.558" size="2.54" layer="94" font="vector">uBlox ZOE-M8Q-0-10</text>
+<text x="336.55" y="273.558" size="2.54" layer="94" font="vector">u-blox ZOE-M8Q-0-10</text>
 <text x="383.794" y="275.082" size="2.032" layer="97" font="vector">VCC Range: 2.7 - 3.6V</text>
 <text x="388.62" y="271.526" size="2.032" layer="97" font="vector">I2C Address: 0x42</text>
 <text x="325.12" y="269.24" size="2.032" layer="97" font="vector" align="bottom-center">V_BCKP
