@@ -115,6 +115,7 @@ TwoWire agtWire(PIN_AGTWIRE_SDA, PIN_AGTWIRE_SCL); //Create an I2C port using pa
 
 #include <SparkFun_PHT_MS8607_Arduino_Library.h> //http://librarymanager/All#SparkFun_MS8607
 MS8607 barometricSensor; //Create an instance of the MS8607 object
+#define MS8607_RETRIES 3
 
 // iterationCounter is incremented each time a transmission is attempted.
 // It helps keep track of whether messages are being sent successfully.
@@ -422,21 +423,23 @@ void loop()
       setAGTWirePullups(1); // MS8607 needs pull-ups
 
       bool barometricSensorOK;
-      barometricSensorOK = barometricSensor.begin(agtWire); // Begin the PHT sensor
-      if (barometricSensorOK == false)
-      {
-        // Send a warning message if we were unable to connect to the MS8607:
-        Serial.println(F("*** Could not detect the MS8607 sensor. Trying again... ***"));
-        barometricSensorOK = barometricSensor.begin(agtWire); // Re-begin the PHT sensor
+      int tries = 0;
+      do {
+        barometricSensorOK = barometricSensor.begin(agtWire); // Begin the PHT sensor
+        tries++;
         if (barometricSensorOK == false)
         {
           // Send a warning message if we were unable to connect to the MS8607:
-          Serial.println(F("*** MS8607 sensor not detected at default I2C address ***"));
+          Serial.print(F("*** Could not detect the MS8607 sensor at try "));
+          Serial.print(tries);
+          Serial.println(F(". ***"));
+          delay(100);
         }
-      }
-
+      } while (!barometricSensorOK && (tries < MS8607_RETRIES));
       if (barometricSensorOK == false) // If the sensor is not OK
       {
+        // Send a warning message if we were unable to connect to the MS8607:
+        Serial.println(F("*** MS8607 sensor not detected at default I2C address ***"));
         // Set the pressure and temperature to default values
         myTrackerSettings.PRESS.the_data = DEF_PRESS;
         myTrackerSettings.TEMP.the_data = DEF_TEMP;
