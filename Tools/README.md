@@ -83,7 +83,7 @@ attachments again.
 
 ### Artemis_Global_Tracker_Message_Translator.py:
 
-A command-line script to translate binary SBD messages. Give the files to translate as argument, e.g. `*.bin`. To write coordinates into a GPX track, use the `-o` option combined with an output filename.
+A command-line script to translate binary SBD messages. To decode messages, use the `-d` option and give the files to translate as argument, e.g. `*.bin`. Alternatively, you can give an ASCII representation of a binary message as argument, which is then translated. To write coordinates into a GPX track, use the `-o` option combined with an output filename.
 Example:
 ```
 python3 Artemis_Global_Tracker_Message_Translator.py *.bin -o track.gpx
@@ -102,6 +102,22 @@ Adjust the entries according to your configuration. The `from` entry filters mes
 to process all messages from RockBLOCK. By default, the script only retrieves new messages. Use the `-a` option to retrieve all messages. Example for invoking the script:
 ```
 python3 Artemis_Global_Tracker_Message_Translator.py -i imap_settings.ini -a -o track.gpx
+```
+
+The tool can also encode binary messages and optionally send them to a device. This is done with the `-e` option in combination with one or more of the following options:
+
+* `-p lon,lat,alt` position with longitude, latitude and altitude
+* `-t YYYY-mm-ddTHH:MM:SS` datetime as specified
+* `-u n[:val][,m[:val]]` USERFUNC n [and m] with optinal values: provide a comma-separated list of numbers of user functions you want to have, with optional values separated by colon, e.g. `-u 1,5:123,8:1000` to invoke user function 1, user function 5 with value 123 and user function 8 with value 1000
+
+To send a message to a device, use the `-s` option with an ini file specifying the target device and the RockBLOCK credentials as follows:
+```
+[device]
+imei = 300434012345678
+
+[rockblock]
+user = username@rockblock
+password = mypassword@rockblock
 ```
 
 ### Artemis_Global_Tracker_Mapper.py:
