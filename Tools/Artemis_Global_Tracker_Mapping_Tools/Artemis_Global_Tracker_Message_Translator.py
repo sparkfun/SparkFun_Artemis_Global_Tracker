@@ -5,12 +5,14 @@ Message translator for binary SBD messages
 
 Written by: Andreas Schneider
 7th May 2021
+20th August 2022
 
 License: MIT
 
 This code translates binary SBD messages by the Artemis Global Tracker.
-Messages can be read from local files or from email attachments on an IMAP server.
+Binary messages can be read from local files or from email attachments on an IMAP server.
 Optionally, the coordinates of all messages can be written into a GPX file.
+Alternatively, binary messages can be encoded and written to file or sent to a device.
 """
 
 import numpy as np
